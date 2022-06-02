@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds415" resourceIdentifier="'cas-shared-default','tbub','DATAANALYTICSTOMONITOR2022','en_US'" tableModifiedTimeStamp="2022-06-02T13:44:11.699Z">
+            <columns>
+                <column dataType="string" label="Industry" xref="Industry"/>
+                <column dataType="string" label="Region" xref="Region"/>
+                <column dataType="double" format="BEST12." label="rowcnt" xref="rowcnt"/>
+                <column dataType="string" label="area" xref="area"/>
+                <column dataType="double" format="BEST12." label="count" xref="count"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds448" resourceIdentifier="'cas-shared-default','tbub','DATAUSED2022','en_US'" tableModifiedTimeStamp="2022-06-02T13:44:11.702Z">
+            <columns>
+                <column dataType="string" label="Industry" xref="Industry"/>
+                <column dataType="string" label="Region" xref="Region"/>
+                <column dataType="double" format="BEST12." label="rowcnt" xref="rowcnt"/>
+                <column dataType="string" label="Source" xref="Source"/>
+                <column dataType="double" format="BEST12." label="count" xref="count"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds1566" resourceIdentifier="'cas-shared-default','tbub','ALL SURVEY DATA FOR SAS','en_US'" tableModifiedTimeStamp="2022-06-02T13:44:11.719Z">
+            <columns>
+                <column dataType="double" format="BEST12." label="Respondent ID" xref="Respondent ID"/>
+                <column dataType="string" label="Professional role" xref="Professional role"/>
+                <column dataType="string" label="Position level" xref="Position level"/>
+                <column dataType="string" label="Number of employees" xref="Number of employees"/>
+                <column dataType="string" label="Region" xref="Region"/>
+                <column dataType="string" label="Industry" xref="Industry"/>
+                <column dataType="string" label="Which of the following types of data analytics does your organization currently use as part of its anti-fraud initiatives?" xref="Which of the following types of data analytics does your organization currently use as part of its anti-fraud initiatives?"/>
+                <column dataType="string" label="Automated red flags/business rules" xref="Automated red flags/business rules"/>
+                <column dataType="string" label="Exception reporting/anomaly detection" xref="Exception reporting/anomaly detection"/>
+                <column dataType="string" label="Predictive analytics/modeling" xref="Predictive analytics/modeling"/>
+                <column dataType="string" label="Text mining" xref="Text mining"/>
+                <column dataType="string" label="Emotional tone/sentiment analysis" xref="Emotional tone/sentiment analysis"/>
+                <column dataType="string" label="Link analysis/social network analysis" xref="Link analysis/social network analysis"/>
+                <column dataType="string" label="Geographic data mapping" xref="Geographic data mapping"/>
+                <column dataType="string" label="Data visualization" xref="Data visualization"/>
+                <column dataType="string" label="Artificial intelligence/machine learning" xref="Artificial intelligence/machine learning"/>
+                <column dataType="string" label="Cryptocurrency tracing/transaction analysis" xref="Cryptocurrency tracing/transaction analysis"/>
+                <column dataType="string" label="For which of the following areas of fraud risk does your organization currently use data analytics or automated monitoring tools to identify red flags of potential fraud?" xref="For which of the following areas of fraud risk does your organization currently use data analytics or automated monitoring tools to identify red flags of potential fraud?"/>
+                <column dataType="string" label="Travel and entertainment expense fraud" xref="Travel and entertainment expense fraud"/>
+                <column dataType="string" label="Procurement/purchasing fraud" xref="Procurement/purchasing fraud"/>
+                <column dataType="string" label="Fraudulent disbursements/outgoing payments" xref="Fraudulent disbursements/outgoing payments"/>
+                <column dataType="string" label="Theft or fraud involving receipts/incoming payments" xref="Theft or fraud involving receipts/incoming payments"/>
+                <column dataType="string" label="Fraud by customers/first-party fraud" xref="Fraud by customers/first-party fraud"/>
+                <column dataType="string" label="Payroll fraud" xref="Payroll fraud"/>
+                <column dataType="string" label="Inventory theft/fraud" xref="Inventory theft/fraud"/>
+                <column dataType="string" label="Corruption and bribery" xref="Corruption and bribery"/>
+                <column dataType="string" label="Financial reporting fraud" xref="Financial reporting fraud"/>
+                <column dataType="string" label="Fraud committed by vendors/contractors" xref="Fraud committed by vendors/contractors"/>
+                <column dataType="string" label="Hacking/data breaches/unauthorized user access" xref="Hacking/data breaches/unauthorized user access"/>
+                <column dataType="string" label="Identity theft/account takeover" xref="Identity theft/account takeover"/>
+                <column dataType="string" label="Money laundering" xref="Money laundering"/>
+                <column dataType="string" label="Which of the following data sources does your organization currently pull from in conducting its anti-fraud data analytics initiatives?" xref="Which of the following data sources does your organization currently pull from in conducting its anti-fraud data analytics initiatives?"/>
+                <column dataType="string" label="Internal structured data" xref="Internal structured data"/>
+                <column dataType="string" label="Internal unstructured data" xref="Internal unstructured data"/>
+                <column dataType="string" label="Public records" xref="Public records"/>
+                <column dataType="string" label="Data from connected devices" xref="Data from connected devices"/>
+                <column dataType="string" label="Law enforcement or government watch lists" xref="Law enforcement or government watch lists"/>
+                <column dataType="string" label="Social media" xref="Social media"/>
+                <column dataType="string" label="Other third-party data" xref="Other third-party data"/>
+                <column dataType="string" label="Which of the following types of data analytics technologies do you expect your organization to adopt or deploy in the next 1–2 years?" xref="Which of the following types of data analytics technologies do you expect your organization to adopt or deploy in the next 1–2 years?"/>
+                <column dataType="string" label="Automated red flags/business rules_1" xref="Automated red flags/business rules_1"/>
+                <column dataType="string" label="Exception reporting/anomaly detection_1" xref="Exception reporting/anomaly detection_1"/>
+                <column dataType="string" label="Predictive analytics/modeling_1" xref="Predictive analytics/modeling_1"/>
+                <column dataType="string" label="Text mining_1" xref="Text mining_1"/>
+                <column dataType="string" label="Emotional tone/sentiment analysis_1" xref="Emotional tone/sentiment analysis_1"/>
+                <column dataType="string" label="Link analysis/social network analysis_1" xref="Link analysis/social network analysis_1"/>
+                <column dataType="string" label="Geographic data mapping_1" xref="Geographic data mapping_1"/>
+                <column dataType="string" label="Data visualization_1" xref="Data visualization_1"/>
+                <column dataType="string" label="Artificial intelligence/machine learning_1" xref="Artificial intelligence/machine learning_1"/>
+                <column dataType="string" label="Cryptocurrency tracing/transaction analysis_1" xref="Cryptocurrency tracing/transaction analysis_1"/>
+                <column dataType="string" label="How beneficial has the use of data analytics been in each of the following areas of your organization’s anti-fraud initiatives?" xref="How beneficial has the use of data analytics been in each of the following areas of your organization’s anti-fraud initiatives?"/>
+                <column dataType="string" label="Volume" xref="Volume"/>
+                <column dataType="string" label="Accuracy" xref="Accuracy"/>
+                <column dataType="string" label="Efficiency" xref="Efficiency"/>
+                <column dataType="string" label="Timeliness" xref="Timeliness"/>
+                <column dataType="string" label="Does your organization currently use a formal case management software program or system as part of its anti-fraud initiatives?" xref="Does your organization currently use a formal case management software program or system as part of its anti-fraud initiatives?"/>
+                <column dataType="string" label="Does your organization currently use a digital forensics/e-discovery software program or system as part of its anti-fraud initiatives?" xref="Does your organization currently use a digital forensics/e-discovery software program or system as part of its anti-fraud initiatives?"/>
+                <column dataType="string" label="Does your organization currently use a specialized program or system for capturing and storing online evidence obtained as part of fraud investigations?" xref="Does your organization currently use a specialized program or system for capturing and storing online evidence obtained as part of fraud investigations?"/>
+                <column dataType="string" label="Which of the following emerging technologies does your organization currently use or expect to use as part of its anti-fraud initiatives?" xref="Which of the following emerging technologies does your organization currently use or expect to use as part of its anti-fraud initiatives?"/>
+                <column dataType="string" label="Physical biometrics (e.g., fingerprint, facial, or vocal recognition)" xref="Physical biometrics (e.g., fingerprint, facial, or vocal recognition)"/>
+                <column dataType="string" label="Behavioral biometrics (e.g., keystroke recognition, device usage patterns, or signature dynamics)" xref="Behavioral biometrics (e.g., keystroke recognition, device usage patterns, or signature dynamics)"/>
+                <column dataType="string" label="Robotics, including robotic process automation (RPA)" xref="Robotics, including robotic process automation (RPA)"/>
+                <column dataType="string" label="Blockchain/distributed ledger technology" xref="Blockchain/distributed ledger technology"/>
+                <column dataType="string" label="Virtual/augmented reality" xref="Virtual/augmented reality"/>
+                <column dataType="string" label="Computer vision analytics (i.e., computer/artificial intelligence-based analysis of videos or photographs)" xref="Computer vision analytics (i.e., computer/artificial intelligence-based analysis of videos or photographs)"/>
+                <column dataType="string" label="Does your organization contribute to a data-sharing consortium for purposes of detecting or preventing fraud?" xref="Does your organization contribute to a data-sharing consortium for purposes of detecting or preventing fraud?"/>
+                <column dataType="string" label="How much of a challenge do each of the following factors present in implementing new anti-fraud technology in your organization?" xref="How much of a challenge do each of the following factors present in implementing new anti-fraud technology in your organization?"/>
+                <column dataType="string" label="Budget/financial restrictions" xref="Budget/financial restrictions"/>
+                <column dataType="string" label="Excessive false positives" xref="Excessive false positives"/>
+                <column dataType="string" label="Poor data quality or integration" xref="Poor data quality or integration"/>
+                <column dataType="string" label="Lack of perceived ROI" xref="Lack of perceived ROI"/>
+                <column dataType="string" label="Staffing/in-house skills limitations" xref="Staffing/in-house skills limitations"/>
+                <column dataType="string" label="Legal/regulatory concerns" xref="Legal/regulatory concerns"/>
+                <column dataType="string" label="Security risks/vulnerabilities" xref="Security risks/vulnerabilities"/>
+                <column dataType="string" label="Data governance and transparency concerns" xref="Data governance and transparency concerns"/>
+                <column dataType="string" label="Over the next 2 years, how is your organization’s budget for anti-fraud technology expected to change?" xref="Over the next 2 years, how is your organization’s budget for anti-fraud technology expected to change?"/>
+                <column dataType="string" label="How has the COVID-19 pandemic affected your organization's use of anti-fraud technology?" xref="How has the COVID-19 pandemic affected your organization's use of anti-fraud technology?"/>
+                <column dataType="string" label="Data analytics" xref="Data analytics"/>
+                <column dataType="string" label="Case management tools" xref="Case management tools"/>
+                <column dataType="string" label="Digital forensics/e-discovery tools" xref="Digital forensics/e-discovery tools"/>
+                <column dataType="string" label="Physical biometrics" xref="Physical biometrics"/>
+                <column dataType="string" label="Behavioral biometrics" xref="Behavioral biometrics"/>
+                <column dataType="string" label="Robotics, including robotic process automation" xref="Robotics, including robotic process automation"/>
+                <column dataType="string" label="Blockchain/distributed ledger technology_1" xref="Blockchain/distributed ledger technology_1"/>
+                <column dataType="string" label="Virtual/augmented reality_1" xref="Virtual/augmented reality_1"/>
+                <column dataType="string" label="Computer vision analytics" xref="Computer vision analytics"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds2054" resourceIdentifier="'cas-shared-default','tbub','LATLONG2022','en_US'" tableModifiedTimeStamp="2022-06-02T13:44:08.457Z">
+            <columns>
+                <column dataType="string" label="Region" xref="Region"/>
+                <column dataType="double" format="BEST12." label="LATITUDE" xref="LATITUDE"/>
+                <column dataType="double" format="BEST12." label="LONGITUDE" xref="LONGITUDE"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds4745" resourceIdentifier="'cas-shared-default','tbub','FUTUREINVESTMENTRESPONSE2022','en_US'" tableModifiedTimeStamp="2022-06-02T13:44:12.828Z">
+            <columns>
+                <column dataType="string" label="Region" xref="Region"/>
+                <column dataType="string" label="Industry" xref="Industry"/>
+                <column dataType="string" label="InvestmentChange" xref="InvestmentChange"/>
+                <column dataType="string" label="Challenges" xref="Challenges"/>
+                <column dataType="string" label="ChallengeType" xref="ChallengeType"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds5521" resourceIdentifier="'cas-shared-default','tbub','TOOLPROFILE2022','en_US'" tableModifiedTimeStamp="2022-06-02T13:44:12.649Z">
+            <columns>
+                <column dataType="string" label="Industry" xref="Industry"/>
+                <column dataType="string" label="Consortium" xref="Consortium"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds8840" resourceIdentifier="'cas-shared-default','tbub','INDREGDATATECH2022','en_US'" tableModifiedTimeStamp="2022-06-02T13:44:11.721Z">
+            <columns>
+                <column dataType="string" label="Industry" xref="Industry"/>
+                <column dataType="string" label="Region" xref="Region"/>
+                <column dataType="double" format="BEST12." label="rowcnt" xref="rowcnt"/>
+                <column dataType="string" label="category" xref="category"/>
+                <column dataType="string" label="Usage" xref="Usage"/>
+                <column dataType="double" format="BEST12." label="count" xref="count"/>
+            </columns>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>
