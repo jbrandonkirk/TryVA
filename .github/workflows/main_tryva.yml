@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'TryVA'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EEAC5E5416D5466F9240ED8A285E2E51 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_73A96299FFB141729B80C51BF464EDEC }}
           package: '*.war'
