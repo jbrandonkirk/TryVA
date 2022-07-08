@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds70" resourceIdentifier="'cas-shared-default','Guest','SOLARINVOICEKEY','en_US'" tableModifiedTimeStamp="2021-08-27T15:57:22.074Z">
+            <columns>
+                <column dataType="string" label="VAname" xref="vaname"/>
+                <column dataType="string" label="Location" xref="location"/>
+                <column dataType="double" format="BEST12." label="Panels" xref="panels"/>
+                <column dataType="double" format="F12.4" label="MWdcCap" xref="mwdccap"/>
+                <column dataType="string" label="Type" xref="type"/>
+                <column dataType="double" format="BEST12." label="Acres" xref="acres"/>
+                <column dataType="string" label="COD" xref="cod"/>
+                <column dataType="double" format="BEST12." label="PaybackYR" xref="paybackyr"/>
+                <column dataType="double" format="BEST12." label="PaybackYrs" xref="paybackyrs"/>
+                <column dataType="double" format="BEST12." label="Cost" xref="cost"/>
+                <column dataType="double" format="BEST12." label="ATCost" xref="atcost"/>
+                <column dataType="double" format="BEST12." label="TaxBen" xref="taxben"/>
+                <column dataType="double" format="F12.2" label="IRR" xref="irr"/>
+                <column dataType="date" format="DATE9" label="sasdateCOD" xref="sasdatecod"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds123" resourceIdentifier="'cas-shared-default','Guest','SOLARINVOICE','en_US'" tableModifiedTimeStamp="2021-08-27T15:57:22.075Z">
+            <columns>
+                <column dataType="string" label="Solar_" xref="Solar_"/>
+                <column dataType="string" label="VAname" xref="VAname"/>
+                <column dataType="string" label="Type" xref="Type"/>
+                <column dataType="string" label="Date_" xref="Date_"/>
+                <column dataType="double" format="BEST12." label="Year" xref="Year"/>
+                <column dataType="double" format="F12.2" label="kWhMo" xref="kWhMo"/>
+                <column dataType="double" format="F12.2" label="kWhITD" xref="kWhITD"/>
+                <column dataType="double" format="DOLLAR20.2" label="RevMo" xref="RevMo"/>
+                <column dataType="double" format="DOLLAR20.2" label="RevITD" xref="RevITD"/>
+                <column dataType="double" format="DOLLAR20.2" label="AvgRate" xref="AvgRate"/>
+                <column dataType="double" format="BEST12." label="Latitude" xref="Latitude"/>
+                <column dataType="double" format="BEST12." label="Longitude" xref="Longitude"/>
+                <column dataType="date" format="DATE9" label="sasdate" xref="sasdate"/>
+                <column dataType="date" format="DATE9" label="sasmonth" xref="sasmonth"/>
+                <column dataType="date" format="DATE9" label="sasyear" xref="sasyear"/>
+                <column dataType="date" format="DATE9" label="sasquarter" xref="sasquarter"/>
+                <column dataType="double" format="BEST12." label="order" xref="order"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds318" resourceIdentifier="'cas-shared-default','Guest','WEATHER','en_US'" tableModifiedTimeStamp="2021-08-27T15:57:25.952Z">
+            <columns>
+                <column dataType="date" format="DATE9" label="Date" xref="Date"/>
+                <column dataType="double" format="F12.2" label="TempHigh" xref="TempHigh"/>
+                <column dataType="double" format="F12.2" label="TempAvg" xref="TempAvg"/>
+                <column dataType="double" format="F12.2" label="TempLow" xref="TempLow"/>
+                <column dataType="double" format="F12.2" label="DewHigh" xref="DewHigh"/>
+                <column dataType="double" format="F12.2" label="DewAvg" xref="DewAvg"/>
+                <column dataType="double" format="F12.2" label="DewLow" xref="DewLow"/>
+                <column dataType="double" format="F12.2" label="HumidHigh" xref="HumidHigh"/>
+                <column dataType="double" format="F12.2" label="HumidAvg" xref="HumidAvg"/>
+                <column dataType="double" format="F12.2" label="HumidLow" xref="HumidLow"/>
+                <column dataType="double" format="F12.2" label="WindHighSus" xref="WindHighSus"/>
+                <column dataType="double" format="F12.2" label="WindAvg" xref="WindAvg"/>
+                <column dataType="double" format="F12.2" label="WindHighGust" xref="WindHighGust"/>
+                <column dataType="double" format="F12.2" label="PressHigh" xref="PressHigh"/>
+                <column dataType="double" format="F12.2" label="PressAvg" xref="PressAvg"/>
+                <column dataType="double" format="F12.2" label="PressLow" xref="PressLow"/>
+                <column dataType="double" format="BEST12." label="PrecipMax" xref="PrecipMax"/>
+                <column dataType="double" format="F12.2" label="PrecipSum" xref="PrecipSum"/>
+                <column dataType="double" format="BEST12." label="PrecipMin" xref="PrecipMin"/>
+                <column dataType="double" format="F12.2" label="VisHigh" xref="VisHigh"/>
+                <column dataType="double" format="F12.2" label="VisAvg" xref="VisAvg"/>
+                <column dataType="double" format="F12.2" label="VisLow" xref="VisLow"/>
+                <column dataType="double" format="F12.2" label="CloudCover" xref="CloudCover"/>
+                <column dataType="string" label="Events" xref="Events"/>
+                <column dataType="double" format="F12.2" label="WindDirDeg" xref="WindDirDeg"/>
+                <column dataType="double" format="F12.2" label="DD65" xref="DD65"/>
+                <column dataType="double" format="F12.2" label="HDD65" xref="HDD65"/>
+                <column dataType="double" format="F12.2" label="CDD65" xref="CDD65"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds410" resourceIdentifier="'cas-shared-default','Guest','SF1_SF2_LIFE15_PROD','en_US'" tableModifiedTimeStamp="2021-08-27T15:57:27.987Z">
+            <columns>
+                <column dataType="string" label="SolarFarm" xref="SolarFarm"/>
+                <column dataType="string" label="Season" xref="Season"/>
+                <column dataType="datetime" format="TIMEAMPM19" label="Time" xref="Time"/>
+                <column dataType="date" format="DATE9" label="Date" xref="Date"/>
+                <column dataType="datetime" format="DATETIME19" label="TimeDate" xref="TimeDate"/>
+                <column dataType="double" format="BEST12." label="IntkWh" xref="IntkWh"/>
+                <column dataType="double" format="BEST12." label="IntkW" xref="IntkW"/>
+                <column dataType="double" format="BEST12." label="AgkWh" xref="AgkWh"/>
+                <column dataType="double" format="BEST12." label="POAIrr" xref="POAIrr"/>
+                <column dataType="double" format="BEST12." label="HorIrr" xref="HorIrr"/>
+                <column dataType="double" format="BEST12." label="GhInsol" xref="GhInsol"/>
+                <column dataType="double" format="BEST12." label="TempF" xref="TempF"/>
+                <column dataType="double" format="BEST12." label="PanelF" xref="PanelF"/>
+                <column dataType="double" format="BEST12." label="WindMPH" xref="WindMPH"/>
+                <column dataType="double" format="BEST12." label="CO2lbs" xref="CO2lbs"/>
+                <column dataType="double" format="BEST12." label="CO2T" xref="CO2T"/>
+                <column dataType="double" format="BEST12." label="Switch_kWh" xref="Switch_kWh"/>
+                <column dataType="double" format="BEST12." label="kWhDif" xref="kWhDif"/>
+                <column dataType="double" format="BEST12." label="kWhPctDif" xref="kWhPctDif"/>
+                <column dataType="double" format="BEST12." label="kWhAdj" xref="kWhAdj"/>
+                <column dataType="double" format="BEST12." label="Switch_kWhAdj" xref="Switch_kWhAdj"/>
+                <column dataType="double" format="BEST12." label="kWhDifAdj" xref="kWhDifAdj"/>
+                <column dataType="double" format="BEST12." label="kWhPctDifAdj" xref="kWhPctDifAdj"/>
+                <column dataType="double" format="BEST12." label="ExpkWh" xref="ExpkWh"/>
+                <column dataType="double" format="BEST12." label="ExpvsAct" xref="ExpvsAct"/>
+                <column dataType="double" format="BEST12." label="ExpvsAct_Pct" xref="ExpvsAct_Pct"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds457" resourceIdentifier="'cas-shared-default','Guest','SF1_2_WEATHER_ITD','en_US'" tableModifiedTimeStamp="2021-08-27T15:57:25.727Z">
+            <columns>
+                <column dataType="date" format="MMDDYY8" label="Date" xref="Date"/>
+                <column dataType="double" format="COMMA15.1" label="TempHigh" xref="TempHigh"/>
+                <column dataType="double" format="COMMA15.1" label="TempAvg" xref="TempAvg"/>
+                <column dataType="double" format="COMMA15.1" label="TempLow" xref="TempLow"/>
+                <column dataType="double" format="COMMA15.1" label="DewHigh" xref="DewHigh"/>
+                <column dataType="double" format="COMMA15.1" label="DewAvg" xref="DewAvg"/>
+                <column dataType="double" format="COMMA15.1" label="DewLow" xref="DewLow"/>
+                <column dataType="double" format="COMMA15.1" label="HumidHigh" xref="HumidHigh"/>
+                <column dataType="double" format="COMMA15.1" label="HumidAvg" xref="HumidAvg"/>
+                <column dataType="double" format="COMMA15.1" label="HumidLow" xref="HumidLow"/>
+                <column dataType="double" format="COMMA15.1" label="WindHighSus" xref="WindHighSus"/>
+                <column dataType="double" format="COMMA15.1" label="WindAvg" xref="WindAvg"/>
+                <column dataType="double" format="COMMA15.1" label="WindHighGust" xref="WindHighGust"/>
+                <column dataType="double" format="COMMA15.1" label="PressHigh" xref="PressHigh"/>
+                <column dataType="double" format="COMMA15.1" label="PressAvg" xref="PressAvg"/>
+                <column dataType="double" format="COMMA15.1" label="PressLow" xref="PressLow"/>
+                <column dataType="double" format="COMMA15.1" label="PrecipSum" xref="PrecipSum"/>
+                <column dataType="double" format="COMMA15.1" label="DD65" xref="DD65"/>
+                <column dataType="double" format="COMMA15.1" label="HDD65" xref="HDD65"/>
+                <column dataType="double" format="COMMA15.1" label="CDD65" xref="CDD65"/>
+                <column dataType="double" format="COMMA15." label="IrradAvg (Wm2)" xref="IrradAvg (Wm2)"/>
+                <column dataType="double" format="COMMA15." label="IrradMax (Wm2)" xref="IrradMax (Wm2)"/>
+                <column dataType="double" format="COMMA15." label="SF1 (kW)" xref="SF1 (kW)"/>
+                <column dataType="double" format="COMMA15." label="SF1 (kWh)" xref="SF1 (kWh)"/>
+                <column dataType="double" format="COMMA15." label="SF2 (kWh)" xref="SF2 (kWh)"/>
+                <column dataType="double" format="COMMA15." label="SF1CO2" xref="SF1CO2"/>
+                <column dataType="double" format="COMMA15." label="SF2CO2" xref="SF2CO2"/>
+                <column dataType="double" format="COMMA15." label="SF1Exp" xref="SF1Exp"/>
+                <column dataType="double" format="COMMA15." label="SF2Exp" xref="SF2Exp"/>
+                <column dataType="string" label="AD" xref="AD"/>
+                <column dataType="string" label="AE" xref="AE"/>
+                <column dataType="string" label="AF" xref="AF"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds705" resourceIdentifier="'cas-shared-default','Guest','SOLAR_CAMPUS_KWH_RATES','en_US'" tableModifiedTimeStamp="2021-08-27T15:57:25.949Z">
+            <columns>
+                <column dataType="date" format="DATE9" label="year" xref="year"/>
+                <column dataType="double" format="F12.2" label="cary_kwh" xref="cary_kwh"/>
+                <column dataType="double" format="F12.2" label="cary_cost" xref="cary_cost"/>
+                <column dataType="double" format="F12.2" label="cary_rate" xref="cary_rate"/>
+                <column dataType="double" format="F12.2" label="solar_ kwh" xref="solar__kwh"/>
+                <column dataType="double" format="F12.2" label="solar_rev" xref="solar_rev"/>
+                <column dataType="double" format="F12.2" label="solar_rate" xref="solar_rate"/>
+                <column dataType="double" format="F12.2" label="roof_kwh" xref="roof_kwh"/>
+                <column dataType="double" format="F12.2" label="roof_rev" xref="roof_rev"/>
+                <column dataType="double" format="F12.2" label="roof_rate" xref="roof_rate"/>
+                <column dataType="double" format="F12.2" label="farm_kwh" xref="farm_kwh"/>
+                <column dataType="double" format="F12.2" label="farm_rev" xref="farm_rev"/>
+                <column dataType="double" format="F12.2" label="farm_rate" xref="farm_rate"/>
+                <column dataType="double" format="F12.2" label="roof_pv_kwh" xref="roof_pv_kwh"/>
+                <column dataType="double" format="F12.2" label="roof_pv_rev" xref="roof_pv_rev"/>
+                <column dataType="double" format="F12.2" label="roof_pv_rate" xref="roof_pv_rate"/>
+                <column dataType="double" format="F12.2" label="roof_thermal_kwh" xref="roof_thermal_kwh"/>
+                <column dataType="double" format="F12.2" label="roof_thermal_rev" xref="roof_thermal_rev"/>
+                <column dataType="double" format="F12.2" label="roof_thermal_rate" xref="roof_thermal_rate"/>
+            </columns>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>
