@@ -1,0 +1,354 @@
+"
+
+   length _WARN_ $4;
+   label _WARN_ = 'Warnings';
+   label _CLUSTER_ID_ = 'Cluster ID';
+   label _DISTANCE_ = 'Distance to Centroid';
+   label _DISTANCEINT_ = 'Interval Distance to Centroid';
+   label _DISTANCENOM_ = 'Nominal Distance to Centroid';
+
+   _i_ = 0;
+   _j_ = 0;
+   _k_ = 0;
+   _l_ = 0;
+   _dist_ = 0;
+   _minDist_ = 0;
+   _found_ = 0;
+   _unknown_ = 0;
+   _unknownflag_ = 0;
+   _gammaVal_ =             0.5;
+   _totalMindist2cntr_ = 0;
+   _missingflag4Nom_ = 0;
+   _missingflag4Int_ = 0;
+   _numberOfNomVars_ = 1;
+   _numberOfIntVars_ = 3;
+   _minDistInt_ = 0;
+   _minDistNom_ = 0;
+   _DISTANCEINT_ = 0;
+   _DISTANCENOM_ = 0;
+   label _STANDARDIZED_DISTANCE_ = 'Standardized Distance to Centroid';
+
+   drop _i_;
+   drop _j_;
+   drop _k_;
+   drop _l_;
+   drop _dist_;
+   drop _minDist_;
+   drop _minDistInt_;
+   drop _minDistNom_;
+   drop _unknown_;
+   drop _unknownflag_;
+   drop _found_;
+   drop _gammaVal_;
+   drop _totalMindist2cntr_;
+   drop _missingflag4Nom_;
+   drop _missingflag4Int_;
+   drop _numberOfNomVars_;
+   drop _numberOfIntVars_;
+   drop _intMindist2cntr_;
+   drop _nomMindist2cntr_;
+
+   array _nomVals_3830{1} _temporary_;
+   array _intVals_3830{3} _temporary_;
+   array _missingArr_3830{1} _temporary_;
+   array _intStdVals_3830{3} _temporary_;
+   array _intVars_3830[3] _temporary_;
+   _intVars_3830[1] =
+   'Customer Age'n;
+   _intVars_3830[2] =
+   'Mobile Sessions'n;
+   _intVars_3830[3] =
+   'Website Visits'n;
+   ********* define class variables ********;
+   array _allNomVars_3830 {1} $17 _temporary_ ;
+   array _nomCharVars_3830 {1} $17 _temporary_ ;
+   length _va__c_Browser_ $17; drop _va__c_Browser_;
+   _va__c_Browser_ = left(trim(put(va__c_Browser,$17.)));
+   _allNomVars_3830[1] =
+    _va__c_Browser_ ;
+   _nomCharVars_3830[1] =
+   va__c_Browser;
+   array _cntrcoordsInt_3830{4,3} _temporary_ (
+    59.09805389221
+    0.265344311378
+    3.438248502994
+   50.494071146241
+   2.2672924901194
+   2.6126482213441
+   30.587588565847
+   2.0581480576589
+   3.5553383826045
+   46.066543438081
+   4.2066543438072
+   5.8731977818852
+   );
+   array _stdcntrcoordsInt_3830 {4,3} _temporary_ (
+    1.220453484357
+   -1.424453697254
+   -0.475756257721
+    0.491742452706
+   -0.186664077465
+    -0.94124353338
+   -1.194229484476
+   -0.315976519358
+   -0.409739021198
+    0.116754684932
+    1.012428884581
+     0.89710895489
+   );
+   array _stdscaleInt_3830 {3} _temporary_ (
+   11.807125694907
+   1.6173573818486
+   1.7736258858656
+   );
+   array _stdcenterInt_3830 {3} _temporary_ (
+    44.68800619762
+   2.5691950137334
+   4.2820621170505
+   );
+   array _cntrcoordsNom_3830{4,1} _temporary_ (
+                 1
+                 1
+                 1
+                 1
+   );
+   array _nomLevels_3830 {1,5} $84 _temporary_ (
+   'Chrome'
+   'Edge'
+   'Firefox'
+   'Internet Explorer'
+   'Safari'
+
+   );
+   array _nomModeLevels_3830 {1} _temporary_ (
+                 1
+   );
+   array _nomType_3830 {1} _temporary_ (
+                 0
+   );
+   array _nomVarLevels_3830 {1} _temporary_ (
+                 5
+   );
+
+   *************** check missing interval value ******************;
+   _missingflag4Int_ = 0;
+   do _i_ = 1 to _numberOfIntVars_ until(_missingflag4Int_);
+      if missing( _intVars_3830[_i_] ) then
+         _missingflag4Int_ = 1;
+   end;
+
+
+   *************** check missing and unknown nominal value ******************;
+   _missingflag4Nom_ = 0;
+   _j_ = 1;
+   do _i_ = 1 to _numberOfNomVars_;
+      _missingArr_3830[_i_] = 0;
+      if _nomType_3830[_i_] = 0 then do;
+         if missing( _nomCharVars_3830[_j_])  then do;
+            _missingflag4Nom_ = 1;
+            _missingArr_3830[_i_] = 1;
+         end;
+         _j_ = _j_ + 1;
+      end;
+   end;
+   if _missingflag4Int_ = 1 or _missingflag4Nom_ = 1 then
+      substr(_WARN_, 1, 1) = 'M';
+   *************** check unknown nominal value ******************;
+   _unknownflag_ = 0;
+   do _i_=1 to _numberOfNomVars_;
+      _unknown_ = 1;
+      do _j_=1 to _nomVarLevels_3830[_i_] until (_unknown_ = 0);
+         if _allNomVars_3830[_i_] = _nomLevels_3830[_i_, _j_] then do;
+            _unknown_ = 0;
+         end;
+      end;
+      if _missingArr_3830[_i_]  then
+         _unknown_ = 0;
+      if _unknown_ = 1 then do;
+         _unknownflag_ = 1;
+      end;
+   end;
+   if _unknownflag_ = 1 then
+      substr(_WARN_, 2, 1) = 'U';
+   ********** prepare nominal variable values *********;
+   do _i_=1 to _numberOfNomVars_;
+      _nomVals_3830[_i_] = 1.0;
+      _found_=0;
+      do _j_=1 to _nomVarLevels_3830[_i_] until (_found_ = 1);
+         if _allNomVars_3830[_i_] = _nomLevels_3830[_i_, _j_] then do;
+            _nomVals_3830[_i_] = _j_ ;
+            _found_=1;
+         end;
+      end;
+   end;
+   ********** prepare interval variable values *********;
+   do _i_ = 1 to _numberOfIntVars_;
+      if missing (_intVars_3830[_i_] ) then do;
+         _intVals_3830[_i_] = .;
+         _intStdVals_3830[_i_] = .;
+      end; else do;
+         if missing (_stdscaleInt_3830[_i_] ) then do;
+            _intStdVals_3830[_i_] = ( _intVars_3830[_i_] -  _stdcenterInt_3830[_i_]);
+         end; else do;
+            _intStdVals_3830[_i_] = ( _intVars_3830[_i_] -  _stdcenterInt_3830[_i_])
+                  /  _stdscaleInt_3830[_i_];
+         end;
+         _intVals_3830[_i_] = _intVars_3830[_i_];
+      end;
+   end;
+   ****************** find the closest cluster ******************;
+   if _missingflag4Int_ > 0 | _missingflag4Nom_ > 0 | _unknownflag_ = 1 then
+   do;
+      _CLUSTER_ID_ = .;
+      _DISTANCE_ = .;
+      _minDistInt_ = .;
+      _minDistNom_ = .;
+      _STANDARDIZED_DISTANCE_ = .;
+   end;
+   else
+   do;
+      _CLUSTER_ID_ = .;
+      _minDist_ = 8.988465674E307;
+      do _i_=1 to               4;
+         _intMindist2cntr_ = 0;
+         do _j_=1 to               3;
+            _dist_ = _intStdVals_3830{_j_} - _stdcntrcoordsInt_3830{_i_,_j_};
+            _dist_ = _dist_ ** 2;
+            _intMindist2cntr_ = _intMindist2cntr_ + _dist_;
+         end;
+         _intMindist2cntr_ = _intMindist2cntr_ **              0.5;
+         _nomMindist2cntr_ = 0;
+         do _j_=1 to _numberOfNomVars_;
+            if( _nomVals_3830[_j_] ^= _cntrcoordsNom_3830[ _i_,_j_]) then do;
+               _nomMindist2cntr_ = _nomMindist2cntr_ + 1;
+            end;
+         end;
+         _totalMindist2cntr_ = _intMindist2cntr_ **               2 + _gammaVal_ * _nomMindist2cntr_;
+         if( _minDist_ > _totalMindist2cntr_) then do;
+            _CLUSTER_ID_ = _i_;
+            _minDist_ = _totalMindist2cntr_;
+            _minDistInt_ = _intMindist2cntr_;
+            _minDistNom_ = _nomMindist2cntr_;
+         end;
+         _STANDARDIZED_DISTANCE_ = _minDist_;
+         _DISTANCEINT_ = _minDistInt_;
+         _DISTANCENOM_ = _minDistNom_;
+      end;
+      _DISTANCE_ = 8.988465674E307;
+      _i_ = _CLUSTER_ID_;
+      _intMindist2cntr_ = 0;
+      do _j_=1 to               3;
+         _dist_ = _intVals_3830{_j_} - _cntrcoordsInt_3830{_i_,_j_};
+         _dist_ = _dist_ ** 2;
+         _intMindist2cntr_ = _intMindist2cntr_ + _dist_;
+      end;
+      _intMindist2cntr_ = _intMindist2cntr_ **              0.5;
+      _DISTANCE_ = _intMindist2cntr_ **               2 + _gammaVal_ * _minDistNom_;
+      _DISTANCEINT_ = _intMindist2cntr_;
+      _DISTANCENOM_ = _minDistNom_;
+   end;
+
+if (MISSING('_CLUSTER_ID_'n))then _CLUSTER_ID_ = -1;","   /*------------------------------------------
+   Generated SAS Scoring Code
+     Date             : 13Jul2022:01:27:10
+     Locale           : en_US
+     Model Type       : Cluster
+     Interval variable: Customer Age
+     Interval variable: Mobile Sessions
+     Interval variable: Website Visits
+     Class variable   : va__c_Browser(Browser)
+     ------------------------------------------*/
+/* Temporary Computed Columns */
+length 'va__c_Browser'n $17;
+if (('Browser'n IN ('MOZILLA:FIREFOX')))then do;
+'va__c_Browser'n= 'Firefox';
+end;
+else do;
+if (('Browser'n IN ('SAFARI:IPAD')))then do;
+'va__c_Browser'n= 'Edge';
+end;
+else do;
+if (('Browser'n IN ('_OTHER_','SAFARI')))then do;
+'va__c_Browser'n= 'Safari';
+end;
+else do;
+if (('Browser'n IN ('MS INTERNET EXPLORER')))then do;
+'va__c_Browser'n= 'Chrome';
+end;
+else do;
+if (('Browser'n IN ('GOOGLE CHROME')))then do;
+'va__c_Browser'n= 'Internet Explorer';
+end;
+else do;
+'va__c_Browser'n= ' ';
+end;
+end;
+end;
+end;
+end;
+;
+
+/*------------------------------------------*/
+
+","   /*------------------------------------------*/
+   /*_VA_DROP*/ drop 'va__c_Browser'n '_CLUSTER_ID_'n '_DISTANCE_'n '_WARN_'n '_DISTANCEINT_'n '_DISTANCENOM_'n '_STANDARDIZED_DISTANCE_'n;
+      '_CLUSTER_ID__3830'n='_CLUSTER_ID_'n;
+'_DISTANCE__3830'n='_DISTANCE_'n;
+'_WARN__3830'n='_WARN_'n;
+'_DISTANCEINT__3830'n='_DISTANCEINT_'n;
+'_DISTANCENOM__3830'n='_DISTANCENOM_'n;
+'_STANDARDIZED_DISTANCE__3830'n='_STANDARDIZED_DISTANCE_'n;
+   /*------------------------------------------*/
+","   /*------------------------------------------
+   Generated SAS Scoring Code
+     Date             : 13Jul2022:01:27:10
+     Locale           : en_US
+     Model Type       : Cluster
+     Interval variable: Customer Age
+     Interval variable: Mobile Sessions
+     Interval variable: Website Visits
+     Class variable   : va__c_Browser(Browser)
+     ------------------------------------------*/
+/* Temporary Computed Columns */
+length 'va__c_Browser'n $17;
+if (('Browser'n IN ('MOZILLA:FIREFOX')))then do;
+'va__c_Browser'n= 'Firefox';
+end;
+else do;
+if (('Browser'n IN ('SAFARI:IPAD')))then do;
+'va__c_Browser'n= 'Edge';
+end;
+else do;
+if (('Browser'n IN ('_OTHER_','SAFARI')))then do;
+'va__c_Browser'n= 'Safari';
+end;
+else do;
+if (('Browser'n IN ('MS INTERNET EXPLORER')))then do;
+'va__c_Browser'n= 'Chrome';
+end;
+else do;
+if (('Browser'n IN ('GOOGLE CHROME')))then do;
+'va__c_Browser'n= 'Internet Explorer';
+end;
+else do;
+'va__c_Browser'n= ' ';
+end;
+end;
+end;
+end;
+end;
+;
+
+/*------------------------------------------*/
+
+","   /*------------------------------------------*/
+   /*_VA_DROP*/ drop 'va__c_Browser'n '_CLUSTER_ID_'n '_DISTANCE_'n '_WARN_'n '_DISTANCEINT_'n '_DISTANCENOM_'n '_STANDARDIZED_DISTANCE_'n;
+   /*_VA_DROP_NUMBERED*/ drop '_CLUSTER_ID__3830'n '_DISTANCE__3830'n '_WARN__3830'n '_DISTANCEINT__3830'n '_DISTANCENOM__3830'n '_STANDARDIZED_DISTANCE__3830'n;
+      '_CLUSTER_ID__3830'n='_CLUSTER_ID_'n;
+'_DISTANCE__3830'n='_DISTANCE_'n;
+'_WARN__3830'n='_WARN_'n;
+'_DISTANCEINT__3830'n='_DISTANCEINT_'n;
+'_DISTANCENOM__3830'n='_DISTANCENOM_'n;
+'_STANDARDIZED_DISTANCE__3830'n='_STANDARDIZED_DISTANCE_'n;
+   /*------------------------------------------*/
+"

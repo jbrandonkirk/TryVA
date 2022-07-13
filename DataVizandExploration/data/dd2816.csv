@@ -1,0 +1,219 @@
+"
+
+   length _WARN_ $4;
+   label _WARN_ = 'Warnings';
+   label _CLUSTER_ID_ = 'Cluster ID';
+   label _DISTANCE_ = 'Distance to Centroid';
+
+   _i_ = 0;
+   _j_ = 0;
+   _k_ = 0;
+   _l_ = 0;
+   _dist_ = 0;
+   _minDist_ = 0;
+   _found_ = 0;
+   _unknown_ = 0;
+   _unknownflag_ = 0;
+   _intMindist2cntr_ = 0;
+   _missingflag4Int_ = 0;
+   _numberOfIntVars_ = 4;
+   _minDistInt_ = 0;
+   label _STANDARDIZED_DISTANCE_ = 'Standardized Distance to Centroid';
+
+   drop _i_;
+   drop _j_;
+   drop _k_;
+   drop _l_;
+   drop _dist_;
+   drop _minDist_;
+   drop _minDistInt_;
+   drop _unknown_;
+   drop _unknownflag_;
+   drop _found_;
+   drop _intMindist2cntr_;
+   drop _missingflag4Int_;
+   drop _numberOfIntVars_;
+   drop _minDistInt_;
+
+   array _intVals_2735{4} _temporary_;
+   array _intStdVals_2735{4} _temporary_;
+   array _intVars_2735[4] _temporary_;
+   _intVars_2735[1] =
+   'Customer Age'n;
+   _intVars_2735[2] =
+   'Customer Tenure'n;
+   _intVars_2735[3] =
+   'Mobile Sessions'n;
+   _intVars_2735[4] =
+   'Website Visits'n;
+   array _cntrcoordsInt_2735{7,4} _temporary_ (
+   61.265214606022
+   2.3734785393979
+   -5.77390413E-13
+   3.3568225496482
+   57.910447761192
+   0.9999999999998
+   -5.77390413E-13
+   1.0000000000006
+   45.225080385847
+                 2
+   2.5798499464088
+   2.1596998928189
+   30.095057034221
+   3.2930472569253
+   1.9530146659423
+   3.3940793047256
+    49.38549618321
+   4.0000000000004
+   3.3091603053441
+   5.0767175572516
+   40.365512416924
+   4.9076600209863
+   4.9999999999998
+   6.5820216859036
+   55.000000000006
+   3.0000000000002
+   1.8286647992525
+   3.9813258636792
+   );
+   array _stdcntrcoordsInt_2735 {7,4} _temporary_ (
+    1.404000333083
+   -1.049724915979
+   -1.588514104902
+   -0.521665574897
+    1.119869636797
+   -2.384783430012
+   -1.588514104902
+   -1.850481628175
+    0.045487293191
+   -1.412756219002
+    0.006587865363
+   -1.196623392309
+   -1.235944254383
+   -0.155879100149
+    -0.38097971092
+    -0.50065959197
+    0.397852119726
+    0.531298203018
+    0.457515017964
+    0.448040055422
+   -0.366091959414
+    1.413568441762
+    1.502948583626
+    1.296755751696
+    0.873370375555
+   -0.440729007992
+   -0.457864305559
+   -0.169560139919
+   );
+   array _stdscaleInt_2735 {4} _temporary_ (
+   11.807125694907
+   1.0287777838659
+   1.6173573818486
+   1.7736258858656
+   );
+   array _stdcenterInt_2735 {4} _temporary_ (
+    44.68800619762
+   3.4534122121276
+   2.5691950137334
+   4.2820621170505
+   );
+
+   *************** check missing interval value ******************;
+   _missingflag4Int_ = 0;
+   do _i_ = 1 to _numberOfIntVars_ until(_missingflag4Int_);
+      if missing( _intVars_2735[_i_] ) then
+         _missingflag4Int_ = 1;
+   end;
+
+   if (_missingflag4Int_ = 1) then
+      substr(_WARN_, 1, 1) = 'M';
+   ********** prepare interval variable values *********;
+   do _i_ = 1 to _numberOfIntVars_;
+      if missing (_intVars_2735[_i_] ) then do;
+         _intVals_2735[_i_] = .;
+         _intStdVals_2735[_i_] = .;
+      end; else do;
+         if missing (_stdscaleInt_2735[_i_] ) then do;
+            _intStdVals_2735[_i_] = ( _intVars_2735[_i_] -  _stdcenterInt_2735[_i_]);
+         end; else do;
+            _intStdVals_2735[_i_] = ( _intVars_2735[_i_] -  _stdcenterInt_2735[_i_])
+                  /  _stdscaleInt_2735[_i_];
+         end;
+         _intVals_2735[_i_] = _intVars_2735[_i_];
+      end;
+   end;
+   ****************** find the closest cluster ******************;
+   if _missingflag4Int_ > 0  then
+   do;
+      _CLUSTER_ID_ = .;
+      _DISTANCE_ = .;
+      _minDistInt_ = .;
+      _STANDARDIZED_DISTANCE_ = .;
+   end;
+   else
+   do;
+      _CLUSTER_ID_ = .;
+      _minDist_ = 8.988465674E307;
+      do _i_=1 to               7;
+         _intMindist2cntr_ = 0;
+         do _j_=1 to               4;
+            _dist_ = _intStdVals_2735{_j_} - _stdcntrcoordsInt_2735{_i_,_j_};
+            _dist_ = _dist_ ** 2;
+            _intMindist2cntr_ = _intMindist2cntr_ + _dist_;
+         end;
+         _intMindist2cntr_ = _intMindist2cntr_ **              0.5;
+         if( _minDist_  > _intMindist2cntr_) then do;
+            _CLUSTER_ID_ = _i_;
+            _minDist_ = _intMindist2cntr_;
+         end;
+         _STANDARDIZED_DISTANCE_ = _minDist_;
+      end;
+      _DISTANCE_ = 8.988465674E307;
+      _i_ = _CLUSTER_ID_;
+      _intMindist2cntr_ = 0;
+      do _j_=1 to               4;
+         _dist_ = _intVals_2735{_j_} - _cntrcoordsInt_2735{_i_,_j_};
+         _dist_ = _dist_ ** 2;
+         _intMindist2cntr_ = _intMindist2cntr_ + _dist_;
+      end;
+      _intMindist2cntr_ = _intMindist2cntr_ **              0.5;
+      _DISTANCE_ = _intMindist2cntr_;
+   end;
+
+if (MISSING('_CLUSTER_ID_'n))then _CLUSTER_ID_ = -1;","   /*------------------------------------------
+   Generated SAS Scoring Code
+     Date             : 13Jul2022:01:27:09
+     Locale           : en_US
+     Model Type       : Cluster
+     Interval variable: Customer Age
+     Interval variable: Customer Tenure
+     Interval variable: Mobile Sessions
+     Interval variable: Website Visits
+     ------------------------------------------*/
+","   /*------------------------------------------*/
+   /*_VA_DROP*/ drop '_CLUSTER_ID_'n '_DISTANCE_'n '_WARN_'n '_STANDARDIZED_DISTANCE_'n;
+      '_CLUSTER_ID__2735'n='_CLUSTER_ID_'n;
+'_DISTANCE__2735'n='_DISTANCE_'n;
+'_WARN__2735'n='_WARN_'n;
+'_STANDARDIZED_DISTANCE__2735'n='_STANDARDIZED_DISTANCE_'n;
+   /*------------------------------------------*/
+","   /*------------------------------------------
+   Generated SAS Scoring Code
+     Date             : 13Jul2022:01:27:09
+     Locale           : en_US
+     Model Type       : Cluster
+     Interval variable: Customer Age
+     Interval variable: Customer Tenure
+     Interval variable: Mobile Sessions
+     Interval variable: Website Visits
+     ------------------------------------------*/
+","   /*------------------------------------------*/
+   /*_VA_DROP*/ drop '_CLUSTER_ID_'n '_DISTANCE_'n '_WARN_'n '_STANDARDIZED_DISTANCE_'n;
+   /*_VA_DROP_NUMBERED*/ drop '_CLUSTER_ID__2735'n '_DISTANCE__2735'n '_WARN__2735'n '_STANDARDIZED_DISTANCE__2735'n;
+      '_CLUSTER_ID__2735'n='_CLUSTER_ID_'n;
+'_DISTANCE__2735'n='_DISTANCE_'n;
+'_WARN__2735'n='_WARN_'n;
+'_STANDARDIZED_DISTANCE__2735'n='_STANDARDIZED_DISTANCE_'n;
+   /*------------------------------------------*/
+"

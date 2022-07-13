@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds946" resourceIdentifier="'cas-shared-default','GPCI','360DISCOVERDATA_USA','en_US'" tableModifiedTimeStamp="2022-07-07T18:11:35.324Z">
+            <columns>
+                <column dataType="double" format="BEST12." label="Data_Partition_Ind" xref="Data_Partition_Ind"/>
+                <column dataType="double" format="BEST15." label="Session_ID" xref="Session_ID"/>
+                <column dataType="double" format="BEST10." label="Customer_ID" xref="Customer_ID"/>
+                <column dataType="double" format="F11." label="Visitor_ID" xref="Visitor_ID"/>
+                <column dataType="string" label="Country" xref="Country"/>
+                <column dataType="double" format="BEST12." label="State_Latitude" xref="State_Latitude"/>
+                <column dataType="string" label="State" xref="State"/>
+                <column dataType="double" format="BEST14." label="State_Longitude" xref="State_Longitude"/>
+                <column dataType="string" label="Model_Management_Int_Ind" xref="Model_Management_Int_Ind"/>
+                <column dataType="string" label="City" xref="City"/>
+                <column dataType="string" label="CI360_Int_Ind" xref="CI360_Int_Ind"/>
+                <column dataType="string" label="Machine_Learning_Int_Ind" xref="Machine_Learning_Int_Ind"/>
+                <column dataType="string" label="Browser" xref="Browser"/>
+                <column dataType="string" label="Traffic_Source" xref="Traffic_Source"/>
+                <column dataType="string" label="Forecasting_Int_Ind" xref="Forecasting_Int_Ind"/>
+                <column dataType="string" label="Direct_Visit_Ind" xref="Direct_Visit_Ind"/>
+                <column dataType="string" label="Data_Management_Int_Ind" xref="Data_Management_Int_Ind"/>
+                <column dataType="string" label="Macro_Goal_Ind_Target" xref="Macro_Goal_Ind_Target"/>
+                <column dataType="double" format="BEST15." label="Engagement_Score" xref="Engagement_Score"/>
+                <column dataType="double" format="BEST15." label="Total_Pages_Screens_Viewed" xref="Total_Pages_Screens_Viewed"/>
+                <column dataType="string" label="Operating_System" xref="Operating_System"/>
+                <column dataType="string" label="Organic_Search_Ind" xref="Organic_Search_Ind"/>
+                <column dataType="string" label="Paid_Search_Ind" xref="Paid_Search_Ind"/>
+                <column dataType="string" label="Visual_Analytics_Int_Ind" xref="Visual_Analytics_Int_Ind"/>
+                <column dataType="date" format="DATE11" label="Visitor_Date" xref="Visitor_Date"/>
+                <column dataType="string" label="Visitor_Type" xref="Visitor_Type"/>
+                <column dataType="string" label="Ad_Referring_Site" xref="Ad_Referring_Site"/>
+                <column dataType="string" label="Ad_Campaign_Detail" xref="Ad_Campaign_Detail"/>
+                <column dataType="double" format="BEST12." label="Ad_Campaign_Impressions" xref="Ad_Campaign_Impressions"/>
+                <column dataType="double" format="BEST12." label="Ad_Campaign_Clicks" xref="Ad_Campaign_Clicks"/>
+                <column dataType="double" format="PERCENT12.2" label="Ad_Campaign_CTR" xref="Ad_Campaign_CTR"/>
+                <column dataType="double" format="NLMNLUSD17.2" label="Ad_Campaign_Cost" xref="Ad_Campaign_Cost"/>
+                <column dataType="double" format="BEST12." label="Micro_Goal_White_Paper_DLs" xref="Micro_Goal_White_Paper_DLs"/>
+                <column dataType="string" label="Micro_Goal_White_Paper_DLs_Ind" xref="Micro_Goal_White_Paper_DLs_Ind"/>
+                <column dataType="double" format="BEST10." label="DMA_Longitude" xref="DMA_Longitude"/>
+                <column dataType="double" format="BEST10." label="DMA_Latitude" xref="DMA_Latitude"/>
+                <column dataType="double" format="F3." label="Affiliate_Visit_Flag" xref="Affiliate_Visit_Flag"/>
+                <column dataType="double" format="F3." label="Display_Visit_Flag" xref="Display_Visit_Flag"/>
+                <column dataType="double" format="F3." label="Social_Visit_Flag" xref="Social_Visit_Flag"/>
+                <column dataType="double" format="F3." label="Blog_Visit_Flag" xref="Blog_Visit_Flag"/>
+                <column dataType="double" format="BEST12." label="City_Latitude" xref="City_Latitude"/>
+                <column dataType="double" format="BEST14." label="City_Longitude" xref="City_Longitude"/>
+                <column dataType="string" label="Continent" xref="Continent"/>
+                <column dataType="double" format="BEST13." label="Continent_Latitude" xref="Continent_Latitude"/>
+                <column dataType="double" format="BEST13." label="Continent_Longitude" xref="Continent_Longitude"/>
+                <column dataType="double" format="BEST8." label="Country_Latitude" xref="Country_Latitude"/>
+                <column dataType="double" format="BEST9." label="Country_Longitude" xref="Country_Longitude"/>
+                <column dataType="string" label="Online_Display_Ad_Placement_ID" xref="Online_Display_Ad_Placement_ID"/>
+                <column dataType="string" label="Search_Engine_Query" xref="Search_Engine_Query"/>
+                <column dataType="double" format="BEST12." label="Customer Age" xref="Customer Age"/>
+                <column dataType="double" format="BEST12." label="Customer Tenure" xref="Customer Tenure"/>
+                <column dataType="double" format="BEST12." label="Mobile Sessions" xref="Mobile Sessions"/>
+                <column dataType="double" format="BEST12." label="Website Visits" xref="Website Visits"/>
+                <column dataType="double" format="BEST12." label="Email Interactions" xref="Email Interactions"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds3543" resourceIdentifier="GeneratedResource-ge2811" tableModifiedTimeStamp="2022-07-07T18:11:35.324Z">
+            <columns>
+                <column dataType="double" format="COMMA20." label="Cluster ID" xref="_CLUSTER_ID_"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds3735" resourceIdentifier="GeneratedResource-ge3721" tableModifiedTimeStamp="2022-07-07T18:11:35.324Z">
+            <columns>
+                <column dataType="double" format="COMMA20." label="Cluster ID" xref="_CLUSTER_ID_"/>
+            </columns>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>
