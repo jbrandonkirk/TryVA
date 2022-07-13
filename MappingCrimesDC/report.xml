@@ -1,0 +1,1939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.19.0" label="Washington D.C. - Mapping Crimes" implicitInteractions="sectionPrompt reportPrompt" createdLocale="en" createdVersion="4.4.0" dateCreated="2020-12-23T01:55:06Z" dateModified="2022-03-27T21:55:58Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="628">
+	<Results>
+		<Result ref="dd354" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<NumericVariable format="DTYEAR4" usage="categorical" label="Crime Year" ref="bi357" varname="bi357" column="c0"/>
+				<NumericVariable format="COMMA12." usage="quantitative" label="Difference Last Year" ref="bi356" varname="bi356" column="c1"/>
+			</Variables>
+			<Columns>
+				<NumericColumn dataType="datetime" colname="c0" encoding="text"/>
+				<NumericColumn dataType="double" colname="c1" encoding="text"/>
+			</Columns>
+			<DefinedColumnSortItems>
+				<DefinedMeasureSortItem variable="bi356" sortDirection="descending"/>
+			</DefinedColumnSortItems>
+			<Data isIndexed="false" availableRowCount="1" contentKey="2PL7WHSDMIOSMVFDBGTGTJJTJXJESNC2" size="19" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA[1.893456E9,-5689.0
+]]></Data>
+		</Result>
+		<Result ref="dd545" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<StringVariable label="MPD Shift" ref="bi554" varname="bi554" column="c0"/>
+				<NumericVariable format="PERCENT20." usage="quantitative" definedAggregation="totalCountPercent" label="Frequency Percent" ref="bi555" varname="bi555" column="c1"/>
+			</Variables>
+			<Columns>
+				<StringColumn maxLength="1" colname="c0" encoding="text"/>
+				<NumericColumn dataType="double" colname="c1" encoding="text"/>
+			</Columns>
+			<DefinedColumnSortItems>
+				<DefinedMeasureSortItem variable="bi555" sortDirection="descending"/>
+			</DefinedColumnSortItems>
+			<Data isIndexed="true" availableRowCount="3" contentKey="BBF66OYMWQQ5PMHUOLIVS4X76GT3ABEU" size="65" format="CSV" rowCount="3" grandTotal="false" dataLayout="minimal"><![CDATA[1,0.4409035321199914
+0,0.36130494209049707
+2,0.19779152578951154
+]]></Data>
+			<StringTable contentKey="J5QJHD4DA6KOFVUVBIRBSEDEWARZDAI3" size="27" format="CSV" rowCount="3"><![CDATA["day"
+"evening"
+"midnight"
+]]></StringTable>
+		</Result>
+		<Result ref="dd336" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<NumericVariable format="DTYEAR4" usage="categorical" label="Crime Year" ref="bi328" varname="bi328" column="c0"/>
+				<StringVariable label="Offense" ref="bi331" varname="bi331" column="c1"/>
+				<NumericVariable format="COMMA12." usage="quantitative" label="Crime Count" ref="bi329" varname="bi329" column="c2"/>
+				<NumericVariable format="COMMA12." usage="quantitative" label="Difference Last Year" ref="bi330" varname="bi330" column="c3"/>
+			</Variables>
+			<Columns>
+				<NumericColumn dataType="datetime" colname="c0" encoding="text"/>
+				<StringColumn maxLength="1" colname="c1" encoding="text"/>
+				<NumericColumn dataType="double" colname="c2" encoding="text"/>
+				<NumericColumn dataType="double" colname="c3" encoding="text"/>
+			</Columns>
+			<DefinedColumnSortItems>
+				<DefinedSortItem variable="bi328" sortDirection="ascending"/>
+			</DefinedColumnSortItems>
+			<DefinedRowSortItems>
+				<DefinedSortItem variable="bi331" sortDirection="ascending"/>
+			</DefinedRowSortItems>
+			<Data isIndexed="true" availableRowCount="4" contentKey="UAEOPS7Q2BONQIA76E6YQRNMXT7UOEEO" size="101" format="CSV" rowCount="4" grandTotal="false" dataLayout="minimal"><![CDATA[1.893456E9,0,1625.0,76.0
+1.893456E9,1,185.0,29.0
+1.893456E9,2,1993.0,-222.0
+1.893456E9,3,156.0,-26.0
+]]></Data>
+			<StringTable contentKey="3HF25RSK5QVPKPAML2EPVLA5EZED6PHF" size="62" format="CSV" rowCount="4"><![CDATA["Assault w/Dangerous Weapon"
+"Homicide"
+"Robbery"
+"Sex Abuse"
+]]></StringTable>
+		</Result>
+		<Result ref="dd309" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<NumericVariable format="DTYEAR4" usage="categorical" label="Crime Year" ref="bi303" varname="bi303" column="c0"/>
+				<StringVariable label="Offense" ref="bi305" varname="bi305" column="c1"/>
+				<NumericVariable format="COMMA12." usage="quantitative" label="Crime Count" ref="bi304" varname="bi304" column="c2"/>
+				<NumericVariable format="COMMA12." usage="quantitative" label="Difference Last Year" ref="bi319" varname="bi319" column="c3"/>
+			</Variables>
+			<Columns>
+				<NumericColumn dataType="datetime" colname="c0" encoding="text"/>
+				<StringColumn maxLength="1" colname="c1" encoding="text"/>
+				<NumericColumn dataType="double" colname="c2" encoding="text"/>
+				<NumericColumn dataType="double" colname="c3" encoding="text"/>
+			</Columns>
+			<DefinedColumnSortItems>
+				<DefinedSortItem variable="bi303" sortDirection="ascending"/>
+			</DefinedColumnSortItems>
+			<DefinedRowSortItems>
+				<DefinedSortItem variable="bi305" sortDirection="ascending"/>
+			</DefinedRowSortItems>
+			<Data isIndexed="true" availableRowCount="5" contentKey="BX2IF5A6ZOJVUUXNZ4SQHO7WAXVNIFSR" size="132" format="CSV" rowCount="5" grandTotal="false" dataLayout="minimal"><![CDATA[1.893456E9,0,13.0,5.0
+1.893456E9,1,1439.0,185.0
+1.893456E9,2,3264.0,1068.0
+1.893456E9,3,8261.0,-2297.0
+1.893456E9,4,10854.0,-4507.0
+]]></Data>
+			<StringTable contentKey="QNNVEHY33RKUZYMGFHQKVVCBIGR23SLS" size="69" format="CSV" rowCount="5"><![CDATA["Arson"
+"Bulgary"
+"Motor Vehicle Theft"
+"Theft f/Auto"
+"Theft/Other"
+]]></StringTable>
+		</Result>
+		<Result ref="dd104" type="relational" status="warning" dataLevel="baseline" label="Region" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Messages>
+				<Message messageKey="geoMapErrorRetrievingGeometries" messageLevel="warning">
+					<MessageText>Unable to retrieve geographic data.</MessageText>
+				</Message>
+			</Messages>
+			<Variables>
+				<NumericVariable format="BEST12." usage="categorical" label="Police Service Areas" ref="bi144" varname="bi144" column="c0"/>
+				<StringVariable label="Map ID" ref="bi125" varname="bi125" column="c1"/>
+				<NumericVariable format="BEST12." usage="categorical" regionMapProvider="dc_police" label="Police Service Areas" ref="bi126" varname="bi126" column="c2"/>
+				<NumericVariable format="COMMA12." usage="quantitative" label="Crime Count" ref="bi145" varname="bi145" column="c3"/>
+				<NumericVariable format="BEST12." usage="categorical" label="Police Service Areas" ref="bi128" varname="bi128" column="c4"/>
+				<NumericVariable format="BEST12." usage="categorical" label="Police Service Areas" ref="bi146" varname="bi146" column="c5"/>
+				<NumericVariable format="COMMA12." usage="quantitative" label="Crime Count" ref="bi147" varname="bi147" column="c6"/>
+			</Variables>
+			<Columns>
+				<NumericColumn dataType="double" colname="c0" encoding="text"/>
+				<StringColumn maxLength="0" colname="c1" encoding="text"/>
+				<NumericColumn dataType="double" colname="c2" encoding="text"/>
+				<NumericColumn dataType="double" colname="c3" encoding="text"/>
+				<NumericColumn dataType="double" colname="c4" encoding="text"/>
+				<NumericColumn dataType="double" colname="c5" encoding="text"/>
+				<NumericColumn dataType="double" colname="c6" encoding="text"/>
+			</Columns>
+			<DataFile contentKey="EBI3NHRDEOGQJAG444LL6DMOH4WVYMLD" size="2358" format="CSV" rowCount="58" grandTotal="false" dataLayout="minimal" file="dd104.csv" isIndexed="false" availableRowCount="58"/>
+		</Result>
+		<Result ref="dd113" type="relational" status="success" dataLevel="baseline" label="Coordinate" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<StringVariable label="Police Station Name" ref="bi155" varname="bi155" column="c0"/>
+				<NumericVariable format="BEST." usage="categorical" coordinateSpace="WGS84" label="Police Station Latitude" ref="bi132" varname="bi132" column="c1"/>
+				<NumericVariable format="BEST." usage="categorical" coordinateSpace="WGS84" label="Police Station Longitude" ref="bi131" varname="bi131" column="c2"/>
+				<StringVariable label="Police Station Name" ref="bi136" varname="bi136" column="c3"/>
+				<StringVariable label="Police Station Name" ref="bi156" varname="bi156" column="c4"/>
+				<StringVariable label="Police Station Type" ref="bi159" varname="bi159" column="c5"/>
+				<StringVariable label="Police Station Address" ref="bi161" varname="bi161" column="c6"/>
+				<StringVariable label="Police Station Contact" ref="bi163" varname="bi163" column="c7"/>
+				<NumericVariable format="BEST12." usage="quantitative" label="Census Track" ref="bi170" varname="bi170" column="c8"/>
+			</Variables>
+			<Columns>
+				<StringColumn maxLength="2" colname="c0" encoding="text"/>
+				<NumericColumn dataType="double" colname="c1" encoding="text"/>
+				<NumericColumn dataType="double" colname="c2" encoding="text"/>
+				<StringColumn maxLength="2" colname="c3" encoding="text"/>
+				<StringColumn maxLength="2" colname="c4" encoding="text"/>
+				<StringColumn maxLength="2" colname="c5" encoding="text"/>
+				<StringColumn maxLength="2" colname="c6" encoding="text"/>
+				<StringColumn maxLength="2" colname="c7" encoding="text"/>
+				<NumericColumn dataType="double" colname="c8" encoding="text"/>
+			</Columns>
+			<DataFile contentKey="YAHBD6QWQO2RYC26T2TLP2ZCAGPNGGCT" size="966" format="CSV" rowCount="16" grandTotal="false" dataLayout="minimal" file="dd113.csv" isIndexed="true" availableRowCount="16"/>
+			<StringTableFile contentKey="C5YGOJIFNWSMOZUEBCHNGOITUBYYBJDR" size="1069" format="CSV" rowCount="47" file="dd113index.csv"/>
+		</Result>
+		<Result ref="dd237" type="relational" status="success" dataLevel="baseline" label="Contour Result" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<NumericVariable format="BEST." usage="quantitative" coordinateSpace="WGS84" label="Latitude" ref="bi248" varname="bi248" column="c0"/>
+				<NumericVariable format="BEST." usage="quantitative" coordinateSpace="WGS84" label="Longitude" ref="bi247" varname="bi247" column="c1"/>
+				<NumericVariable format="COMMA12." usage="quantitative" label="Frequency" ref="bi260" varname="bi260" column="c2"/>
+			</Variables>
+			<Columns>
+				<NumericColumn dataType="double" colname="c0" encoding="text"/>
+				<NumericColumn dataType="double" colname="c1" encoding="text"/>
+				<NumericColumn dataType="double" colname="c2" encoding="text"/>
+			</Columns>
+			<DataFile contentKey="K5VI5U2Z6S6XPZYPRJ3I2EPWBYAVEPT7" size="87655" format="CSV" rowCount="2116" grandTotal="false" dataLayout="minimal" file="dd237.csv" isIndexed="false" availableRowCount="2116"/>
+		</Result>
+		<Result ref="dd364" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<NumericVariable format="DTMONYY7" usage="categorical" label="Crime Start Date" ref="bi367" varname="bi367" column="c0"/>
+				<StringVariable label="Offense" ref="bi370" varname="bi370" column="c1"/>
+				<NumericVariable format="COMMA12." usage="quantitative" label="Crime Count" ref="bi371" varname="bi371" column="c2"/>
+			</Variables>
+			<Columns>
+				<NumericColumn dataType="datetime" colname="c0" encoding="text"/>
+				<StringColumn maxLength="1" colname="c1" encoding="text"/>
+				<NumericColumn dataType="double" colname="c2" encoding="text"/>
+			</Columns>
+			<DefinedColumnSortItems>
+				<DefinedSortItem variable="bi370" sortDirection="ascending"/>
+			</DefinedColumnSortItems>
+			<DataFile contentKey="3E5E6ZPB35VSZYPPM6MLSGFGGXMRQC7G" size="3896" format="CSV" rowCount="203" grandTotal="false" dataLayout="minimal" file="dd364.csv" isIndexed="true" availableRowCount="203"/>
+			<StringTableFile contentKey="I4MPDENYRHQ3U3NMETW4LPOXS4BLI6CU" size="131" format="CSV" rowCount="9" file="dd364index.csv"/>
+		</Result>
+		<Result ref="dd531" type="relational" status="success" dataLevel="baseline" label="Parallel Coordinates Plot" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<StringVariable label="MPD Shift" ref="bi541" varname="bi541" column="c0"/>
+				<StringVariable label="Offense Group" ref="bi542" varname="bi542" column="c1"/>
+				<StringVariable label="Offense" ref="bi544" varname="bi544" column="c2"/>
+				<NumericVariable format="COMMA20." usage="quantitative" label="Frequency" ref="bi521" varname="bi521" column="c3"/>
+			</Variables>
+			<Columns>
+				<StringColumn maxLength="1" colname="c0" encoding="text"/>
+				<StringColumn maxLength="2" colname="c1" encoding="text"/>
+				<StringColumn maxLength="2" colname="c2" encoding="text"/>
+				<NumericColumn dataType="double" colname="c3" encoding="text"/>
+			</Columns>
+			<Data isIndexed="true" availableRowCount="25" contentKey="7NTYAA327OMPWM3ANMV25MOQPIEYKOYI" size="278" format="CSV" rowCount="25" grandTotal="false" dataLayout="minimal"><![CDATA[3,8,7,2052
+4,8,7,2289
+4,13,1,1273
+6,8,7,1119
+3,13,9,797
+3,13,10,112
+4,13,10,149
+4,8,11,7557
+4,8,12,13329
+6,8,12,4073
+6,8,2,807
+6,8,11,3459
+4,8,0,11
+3,8,2,1163
+6,13,10,81
+6,13,9,1764
+6,13,1,1304
+6,13,5,359
+3,8,0,7
+4,8,2,723
+3,13,1,599
+3,8,12,8813
+3,8,11,7803
+4,13,9,1647
+6,8,0,3
+]]></Data>
+			<StringTable contentKey="ZXGK5A54FERBUXZVIF5ZTASKAUXBO5D3" size="179" format="CSV" rowCount="14"><![CDATA["Arson"
+"Assault w/Dangerous Weapon"
+"Bulgary"
+"day"
+"evening"
+"Homicide"
+"midnight"
+"Motor Vehicle Theft"
+"Property"
+"Robbery"
+"Sex Abuse"
+"Theft f/Auto"
+"Theft/Other"
+"Violent"
+]]></StringTable>
+		</Result>
+		<Result ref="dd533" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<StringVariable label="Number of Polylines" ref="bi529" varname="bi529" column="c0"/>
+				<StringVariable label="Polylines" ref="bi530" varname="bi530" column="c1"/>
+			</Variables>
+			<Columns>
+				<StringColumn maxLength="4" colname="c0" encoding="text"/>
+				<StringColumn maxLength="12" colname="c1" encoding="text"/>
+			</Columns>
+			<Data isIndexed="false" availableRowCount="1" contentKey="GSIB7K3GDEBO2EZZDB6GEQVDRC77J6K2" size="18" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA["25","Polylines:"
+]]></Data>
+		</Result>
+		<Result ref="dd532" type="relational" status="success" dataLevel="baseline" label="Dependent Variables Results" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<StringVariable label="Variable Name" ref="bi524" varname="bi524" column="c0"/>
+				<NumericVariable format="BEST." usage="quantitative" label="Bin lower bound" ref="bi525" varname="bi525" column="c1"/>
+				<NumericVariable format="BEST." usage="quantitative" label="Bin width" ref="bi526" varname="bi526" column="c2"/>
+				<NumericVariable format="BEST." usage="quantitative" label="Number of Bins" ref="bi527" varname="bi527" column="c3"/>
+			</Variables>
+			<Columns>
+				<StringColumn maxLength="1" colname="c0" encoding="text"/>
+				<NumericColumn dataType="double" colname="c1" encoding="text"/>
+				<NumericColumn dataType="double" colname="c2" encoding="text"/>
+				<NumericColumn dataType="double" colname="c3" encoding="text"/>
+			</Columns>
+			<Data isIndexed="true" availableRowCount="3" contentKey="R2MJVBLXREWANJN2VEXZRGILMVR3O25L" size="24" format="CSV" rowCount="3" grandTotal="false" dataLayout="minimal"><![CDATA[0,.,.,0
+1,.,.,0
+2,.,.,0
+]]></Data>
+			<StringTable contentKey="RM3XSAHK5WU4S3ZWBYVLG2GYUTWPGHUE" size="24" format="CSV" rowCount="3"><![CDATA["bi541"
+"bi542"
+"bi544"
+]]></StringTable>
+		</Result>
+		<Result ref="dd565" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<NumericVariable format="DOWNAME1" usage="categorical" label="Crime Start Day" ref="bi567" varname="bi567" column="c0"/>
+				<StringVariable label="Offense Group" ref="bi571" varname="bi571" column="c1"/>
+				<NumericVariable format="COMMA12." usage="quantitative" label="Crime Count" ref="bi569" varname="bi569" column="c2"/>
+			</Variables>
+			<Columns>
+				<NumericColumn dataType="date" colname="c0" encoding="text"/>
+				<StringColumn maxLength="1" colname="c1" encoding="text"/>
+				<NumericColumn dataType="double" colname="c2" encoding="text"/>
+			</Columns>
+			<DefinedColumnSortItems>
+				<DefinedSortItem variable="bi567" sortDirection="ascending"/>
+				<DefinedSortItem variable="bi571" sortDirection="ascending"/>
+			</DefinedColumnSortItems>
+			<Data isIndexed="true" availableRowCount="14" contentKey="WZGUFYBOMBXGAT7TCMDJN4NLIPON4NLA" size="182" format="CSV" rowCount="14" grandTotal="false" dataLayout="minimal"><![CDATA[2.0,0,7173.0
+2.0,1,1277.0
+3.0,0,8052.0
+3.0,1,1170.0
+4.0,0,7593.0
+4.0,1,1058.0
+5.0,0,7526.0
+5.0,1,1077.0
+6.0,0,7379.0
+6.0,1,1075.0
+7.0,0,7933.0
+7.0,1,1116.0
+8.0,0,7551.0
+8.0,1,1286.0
+]]></Data>
+			<StringTable contentKey="3TDDF7GTZJQ2Y5T3ZATXTD5SOIBB442H" size="21" format="CSV" rowCount="2"><![CDATA["Property"
+"Violent"
+]]></StringTable>
+		</Result>
+		<Result ref="dd609" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-07-07T18:12:13.133Z">
+			<Variables>
+				<NumericVariable format="BEST12." usage="categorical" label="Police Service Areas" ref="bi611" varname="bi611" column="c0"/>
+				<NumericVariable format="COMMA12." usage="quantitative" label="Crime Count" ref="bi613" varname="bi613" column="c1"/>
+			</Variables>
+			<Columns>
+				<NumericColumn dataType="double" colname="c0" encoding="text"/>
+				<NumericColumn dataType="double" colname="c1" encoding="text"/>
+			</Columns>
+			<DefinedColumnSortItems>
+				<DefinedMeasureSortItem variable="bi613" sortDirection="descending"/>
+				<DefinedSortItem variable="bi611" sortDirection="ascending"/>
+			</DefinedColumnSortItems>
+			<Data isIndexed="false" availableRowCount="58" contentKey="G7SRMKQ7N4GFB6BHJWMEZBUUVEXWRY2Y" size="718" format="CSV" rowCount="58" grandTotal="false" dataLayout="minimal"><![CDATA[207.0,2403.0
+208.0,2222.0
+305.0,2156.0
+206.0,1919.0
+302.0,1910.0
+106.0,1764.0
+209.0,1750.0
+501.0,1741.0
+307.0,1579.0
+506.0,1532.0
+104.0,1518.0
+503.0,1470.0
+603.0,1403.0
+507.0,1387.0
+602.0,1366.0
+505.0,1329.0
+308.0,1222.0
+101.0,1205.0
+502.0,1176.0
+107.0,1165.0
+303.0,1162.0
+404.0,1134.0
+304.0,1129.0
+401.0,1105.0
+202.0,1089.0
+604.0,1083.0
+607.0,1079.0
+608.0,1015.0
+108.0,979.0
+203.0,943.0
+306.0,935.0
+301.0,923.0
+406.0,886.0
+407.0,882.0
+504.0,842.0
+204.0,827.0
+402.0,826.0
+605.0,819.0
+102.0,765.0
+403.0,727.0
+405.0,725.0
+708.0,710.0
+606.0,704.0
+409.0,700.0
+704.0,628.0
+103.0,627.0
+706.0,615.0
+408.0,568.0
+701.0,561.0
+702.0,559.0
+703.0,559.0
+601.0,529.0
+105.0,512.0
+201.0,501.0
+707.0,499.0
+205.0,478.0
+705.0,420.0
+.,3.0
+]]></Data>
+		</Result>
+	</Results>
+	<DataDefinitions>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd102">
+			<BusinessItems>
+				<SyntheticItems name="si122">
+					<Item purpose="geoItem" root="bi55" name="bi144"/>
+					<Item purpose="dataTip" root="bi55" name="bi146"/>
+					<Item purpose="dataTip" root="bi99" name="bi147"/>
+					<Item purpose="color" root="bi99" name="bi145"/>
+					<Item purpose="mapId" root="bi143" name="bi125"/>
+					<Item purpose="polygonId" root="bi142" name="bi126"/>
+					<Item purpose="geoItemRaw" root="bi55" name="bi128"/>
+				</SyntheticItems>
+				<SyntheticItems name="si130">
+					<Item purpose="geoItem" root="bi152" name="bi155"/>
+					<Item purpose="dataTip" root="bi152" name="bi156"/>
+					<Item purpose="dataTip" root="bi157" name="bi159"/>
+					<Item purpose="dataTip" root="bi160" name="bi161"/>
+					<Item purpose="dataTip" root="bi162" name="bi163"/>
+					<Item purpose="dataTip" root="bi168" name="bi170"/>
+					<Item purpose="longitude" root="bi154" name="bi131"/>
+					<Item purpose="latitude" root="bi153" name="bi132"/>
+					<Item purpose="geoItemRaw" root="bi152" name="bi136"/>
+				</SyntheticItems>
+				<RelationalDataItem includeAssociatedColumns="true" name="bi55" base="bi22"/>
+				<LookupDataItem property="polygonId" lookup="bi22" name="bi142"/>
+				<LookupDataItem property="mapId" lookup="bi22" name="bi143"/>
+				<RelationalDataItem name="bi99" base="bi98"/>
+				<RelationalDataItem includeAssociatedColumns="true" name="bi152" base="bi25"/>
+				<LookupDataItem property="longitude" lookup="bi25" name="bi154"/>
+				<LookupDataItem property="latitude" lookup="bi25" name="bi153"/>
+				<RelationalDataItem name="bi157" base="bi26"/>
+				<RelationalDataItem name="bi160" base="bi23"/>
+				<RelationalDataItem name="bi162" base="bi24"/>
+				<RelationalDataItem name="bi168" base="bi9"/>
+				<SyntheticItems name="si246">
+					<Item purpose="geoItem" root="bi254" name="bi257"/>
+					<Item purpose="dataTip" root="bi254" name="bi258"/>
+					<Item purpose="dataTip" root="bi259" name="bi261"/>
+					<Item purpose="color" root="bi259" name="bi260"/>
+					<Item purpose="longitude" root="bi256" name="bi247"/>
+					<Item purpose="latitude" root="bi255" name="bi248"/>
+					<Item purpose="geoItemRaw" root="bi254" name="bi252"/>
+				</SyntheticItems>
+				<RelationalDataItem includeAssociatedColumns="true" name="bi254" base="bi13"/>
+				<LookupDataItem property="longitude" lookup="bi13" name="bi256"/>
+				<LookupDataItem property="latitude" lookup="bi13" name="bi255"/>
+				<RelationalDataItem name="bi259" base="bi29"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="procedural" name="dd103">
+				<ProceduralQuery type="geoMap" scoreCodeNumber="121">
+					<Arguments>
+						<Argument purpose="geoType">
+							<StringValue>region</StringValue>
+						</Argument>
+						<Argument purpose="geoItem">
+							<ReferenceValue>bi55</ReferenceValue>
+						</Argument>
+						<Argument purpose="polygonId">
+							<ReferenceValue>bi142</ReferenceValue>
+						</Argument>
+						<Argument purpose="mapId">
+							<ReferenceValue>bi143</ReferenceValue>
+						</Argument>
+					</Arguments>
+					<SortItems>
+						<SortItem ref="bi99" sortDirection="ascending"/>
+					</SortItems>
+				</ProceduralQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="geoRegion" maxRowsBehavior="truncate" name="dd104" syntheticItems="si122"/>
+				</ResultDefinitions>
+			</DataDefinition>
+			<DataDefinition dataSource="ds7" type="procedural" name="dd112">
+				<ProceduralQuery type="geoMap" scoreCodeNumber="129">
+					<Arguments>
+						<Argument purpose="geoType">
+							<StringValue>coordinate</StringValue>
+						</Argument>
+						<Argument purpose="geoItem">
+							<ReferenceValue>bi152</ReferenceValue>
+						</Argument>
+						<Argument purpose="longitude">
+							<ReferenceValue>bi154</ReferenceValue>
+						</Argument>
+						<Argument purpose="latitude">
+							<ReferenceValue>bi153</ReferenceValue>
+						</Argument>
+					</Arguments>
+				</ProceduralQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="geoScatter" maxRowsBehavior="truncate" name="dd113" syntheticItems="si130"/>
+				</ResultDefinitions>
+			</DataDefinition>
+			<DataDefinition type="procedural" name="dd236">
+				<ProceduralQuery type="geoContour" scoreCodeNumber="245">
+					<Arguments>
+						<Argument purpose="geoType">
+							<StringValue>contour</StringValue>
+						</Argument>
+						<Argument purpose="geoItem">
+							<ReferenceValue>bi254</ReferenceValue>
+						</Argument>
+						<Argument purpose="longitude">
+							<ReferenceValue>bi256</ReferenceValue>
+						</Argument>
+						<Argument purpose="latitude">
+							<ReferenceValue>bi255</ReferenceValue>
+						</Argument>
+						<Argument purpose="binCountLatitude">
+							<IntValue>40</IntValue>
+						</Argument>
+						<Argument purpose="binCountLongitude">
+							<IntValue>40</IntValue>
+						</Argument>
+						<Argument purpose="padMissingGrid">
+							<StringValue>zero</StringValue>
+						</Argument>
+						<Argument purpose="padGridCount">
+							<IntValue>3</IntValue>
+						</Argument>
+					</Arguments>
+				</ProceduralQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="geoContour" maxRowsBehavior="truncate" name="dd237" syntheticItems="si246"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+		<DataDefinition dataSource="ds141" type="mapprovider" name="dd139"/>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd307">
+			<BusinessItems>
+				<RelationalDataItem name="bi305" base="bi11"/>
+				<RelationalDataItem name="bi304" base="bi98"/>
+				<RelationalFilterItem name="bi306">
+					<EditorProperties>
+						<Property key="complexity">SINGLE_DATA_ITEM</Property>
+						<Property key="interactiveEditingAllowed">TRUE</Property>
+					</EditorProperties>
+					<Expression>or(in(${bi302,binned},&apos;Property&apos;),ismissing(${bi302,binned}))</Expression>
+				</RelationalFilterItem>
+				<RelationalDataItem name="bi302" base="bi20"/>
+				<RelationalDataItem name="bi303" base="bi91"/>
+				<RelationalDataItem name="bi319" base="bi318"/>
+				<RelationalFilterItem name="bi321">
+					<EditorProperties>
+						<Property key="complexity">SINGLE_DATA_ITEM</Property>
+						<Property key="interactiveEditingAllowed">TRUE</Property>
+					</EditorProperties>
+					<Expression>or(in(${bi303,binned},1893456000),ismissing(${bi303,binned}))</Expression>
+				</RelationalFilterItem>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="multidimensional" name="dd308">
+				<MultidimensionalQuery rowSubtotals="true" columnSubtotals="true" rowTotals="false" columnTotals="false" detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi303"/>
+							<BusinessItem ref="bi304"/>
+							<BusinessItem ref="bi319"/>
+						</Axis>
+						<Axis type="row">
+							<BusinessItem ref="bi305"/>
+						</Axis>
+					</Axes>
+					<ColumnSortItems>
+						<SortItem ref="bi303" sortDirection="ascending"/>
+					</ColumnSortItems>
+					<RowSortItems>
+						<SortItem ref="bi305" sortDirection="ascending"/>
+					</RowSortItems>
+				</MultidimensionalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="crosstab" maxRowsBehavior="noData" name="dd309"/>
+				</ResultDefinitions>
+			</DataDefinition>
+			<AppliedFilters>
+				<DetailFilters>
+					<BusinessItem ref="bi306"/>
+					<BusinessItem ref="bi321"/>
+				</DetailFilters>
+			</AppliedFilters>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd334">
+			<BusinessItems>
+				<RelationalDataItem name="bi331" base="bi11"/>
+				<RelationalDataItem name="bi329" base="bi98"/>
+				<RelationalFilterItem name="bi332">
+					<EditorProperties>
+						<Property key="complexity">SINGLE_DATA_ITEM</Property>
+						<Property key="interactiveEditingAllowed">TRUE</Property>
+					</EditorProperties>
+					<Expression>or(in(${bi327,binned},&apos;Violent&apos;),ismissing(${bi327,binned}))</Expression>
+				</RelationalFilterItem>
+				<RelationalDataItem name="bi327" base="bi20"/>
+				<RelationalDataItem name="bi328" base="bi91"/>
+				<RelationalDataItem name="bi330" base="bi318"/>
+				<RelationalFilterItem name="bi333">
+					<EditorProperties>
+						<Property key="complexity">SINGLE_DATA_ITEM</Property>
+						<Property key="interactiveEditingAllowed">TRUE</Property>
+					</EditorProperties>
+					<Expression>or(in(${bi328,binned},1893456000),ismissing(${bi328,binned}))</Expression>
+				</RelationalFilterItem>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="multidimensional" name="dd335">
+				<MultidimensionalQuery rowSubtotals="true" columnSubtotals="true" rowTotals="false" columnTotals="false" detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi328"/>
+							<BusinessItem ref="bi329"/>
+							<BusinessItem ref="bi330"/>
+						</Axis>
+						<Axis type="row">
+							<BusinessItem ref="bi331"/>
+						</Axis>
+					</Axes>
+					<ColumnSortItems>
+						<SortItem ref="bi328" sortDirection="ascending"/>
+					</ColumnSortItems>
+					<RowSortItems>
+						<SortItem ref="bi331" sortDirection="ascending"/>
+					</RowSortItems>
+				</MultidimensionalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="crosstab" maxRowsBehavior="noData" name="dd336"/>
+				</ResultDefinitions>
+			</DataDefinition>
+			<AppliedFilters>
+				<DetailFilters>
+					<BusinessItem ref="bi332"/>
+					<BusinessItem ref="bi333"/>
+				</DetailFilters>
+			</AppliedFilters>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd352">
+			<BusinessItems>
+				<RelationalDataItem name="bi356" base="bi318"/>
+				<RelationalDataItem name="bi357" base="bi91"/>
+				<RelationalFilterItem name="bi358">
+					<EditorProperties>
+						<Property key="complexity">SINGLE_DATA_ITEM</Property>
+						<Property key="interactiveEditingAllowed">TRUE</Property>
+					</EditorProperties>
+					<Expression>or(in(${bi357,binned},1893456000),ismissing(${bi357,binned}))</Expression>
+				</RelationalFilterItem>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="multidimensional" name="dd353">
+				<MultidimensionalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi357"/>
+						</Axis>
+						<Axis type="row">
+							<BusinessItem ref="bi356"/>
+						</Axis>
+					</Axes>
+					<ColumnSortItems>
+						<MeasureSortItem ref="bi356" sortDirection="descending"/>
+					</ColumnSortItems>
+				</MultidimensionalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" name="dd354"/>
+				</ResultDefinitions>
+			</DataDefinition>
+			<AppliedFilters>
+				<DetailFilters>
+					<BusinessItem ref="bi358"/>
+				</DetailFilters>
+			</AppliedFilters>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd362">
+			<BusinessItems>
+				<RelationalDataItem binOption="calendar" maxCardinality="300" minCardinality="150" name="bi367" base="bi12"/>
+				<RelationalDataItem name="bi370" base="bi11"/>
+				<RelationalDataItem name="bi371" base="bi98"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="multidimensional" name="dd363">
+				<MultidimensionalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi367"/>
+							<BusinessItem ref="bi370"/>
+						</Axis>
+						<Axis type="row">
+							<BusinessItem ref="bi371"/>
+						</Axis>
+					</Axes>
+					<ColumnSortItems>
+						<SortItem ref="bi370" sortDirection="ascending"/>
+					</ColumnSortItems>
+				</MultidimensionalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="timeSeries" maxRowsBehavior="noData" name="dd364"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd518">
+			<BusinessItems>
+				<SyntheticDataItem name="bi521"/>
+				<SyntheticItems name="si523">
+					<Item purpose="variableName" name="bi524"/>
+					<Item purpose="lowerBound" name="bi525"/>
+					<Item purpose="binWidth" name="bi526"/>
+					<Item purpose="binCount" name="bi527"/>
+				</SyntheticItems>
+				<SyntheticItems name="si528">
+					<Item purpose="polylineCount" name="bi529"/>
+					<Item purpose="polylineCountLabel" name="bi530"/>
+				</SyntheticItems>
+				<RelationalDataItem name="bi541" base="bi17"/>
+				<RelationalDataItem name="bi542" base="bi20"/>
+				<RelationalDataItem name="bi544" base="bi11"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="procedural" name="dd519">
+				<ProceduralQuery type="parallelCoordinates" scoreCodeNumber="520">
+					<Arguments>
+						<ListArgument purpose="variables">
+							<ArgumentGroup group="variableGroup">
+								<Argument purpose="variable">
+									<ReferenceValue>bi541</ReferenceValue>
+								</Argument>
+								<Argument purpose="includeMissing">
+									<BooleanValue>true</BooleanValue>
+								</Argument>
+							</ArgumentGroup>
+							<ArgumentGroup group="variableGroup">
+								<Argument purpose="variable">
+									<ReferenceValue>bi542</ReferenceValue>
+								</Argument>
+								<Argument purpose="includeMissing">
+									<BooleanValue>true</BooleanValue>
+								</Argument>
+							</ArgumentGroup>
+							<ArgumentGroup group="variableGroup">
+								<Argument purpose="variable">
+									<ReferenceValue>bi544</ReferenceValue>
+								</Argument>
+								<Argument purpose="includeMissing">
+									<BooleanValue>true</BooleanValue>
+								</Argument>
+							</ArgumentGroup>
+						</ListArgument>
+						<Argument purpose="binCount">
+							<IntValue>10</IntValue>
+						</Argument>
+						<Argument purpose="maxPolylines">
+							<IntValue>3000</IntValue>
+						</Argument>
+						<Argument purpose="totalCount">
+							<ReferenceValue>bi521</ReferenceValue>
+						</Argument>
+					</Arguments>
+				</ProceduralQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" name="dd531"/>
+					<ResultDefinition purpose="variableOutputInfo" name="dd532" syntheticItems="si523"/>
+					<ResultDefinition purpose="outputInfo" name="dd533" syntheticItems="si528"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd549">
+			<BusinessItems>
+				<RelationalDataItem name="bi546" base="bi91"/>
+				<RelationalFilterItem name="bi548">
+					<EditorProperties>
+						<Property key="complexity">SINGLE_DATA_ITEM</Property>
+						<Property key="interactiveEditingAllowed">TRUE</Property>
+					</EditorProperties>
+					<Expression>or(in(${bi546,binned},1893456000),ismissing(${bi546,binned}))</Expression>
+				</RelationalFilterItem>
+				<RelationalDataItem name="bi554" base="bi17"/>
+				<RelationalDataItem name="bi555" base="bi30"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="multidimensional" name="dd550">
+				<MultidimensionalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi554"/>
+						</Axis>
+						<Axis type="row">
+							<BusinessItem ref="bi555"/>
+						</Axis>
+					</Axes>
+					<ColumnSortItems>
+						<MeasureSortItem ref="bi555" sortDirection="descending"/>
+					</ColumnSortItems>
+				</MultidimensionalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" name="dd545"/>
+				</ResultDefinitions>
+			</DataDefinition>
+			<AppliedFilters>
+				<DetailFilters>
+					<BusinessItem ref="bi548"/>
+				</DetailFilters>
+			</AppliedFilters>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd563">
+			<BusinessItems>
+				<RelationalDataItem name="bi567" base="bi560"/>
+				<RelationalDataItem name="bi569" base="bi98"/>
+				<RelationalDataItem name="bi571" base="bi20"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="multidimensional" name="dd564">
+				<MultidimensionalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi567"/>
+							<BusinessItem ref="bi571"/>
+						</Axis>
+						<Axis type="row">
+							<BusinessItem ref="bi569"/>
+						</Axis>
+					</Axes>
+					<ColumnSortItems>
+						<SortItem ref="bi567" sortDirection="ascending"/>
+						<SortItem ref="bi571" sortDirection="ascending"/>
+					</ColumnSortItems>
+				</MultidimensionalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="graphDefault" maxRowsBehavior="truncate" name="dd565"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd607">
+			<BusinessItems>
+				<RelationalDataItem name="bi611" base="bi22"/>
+				<RelationalDataItem name="bi613" base="bi98"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="multidimensional" name="dd608">
+				<MultidimensionalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi611"/>
+						</Axis>
+						<Axis type="row">
+							<BusinessItem ref="bi613"/>
+						</Axis>
+					</Axes>
+					<ColumnSortItems>
+						<MeasureSortItem ref="bi613" sortDirection="descending"/>
+						<SortItem ref="bi611" sortDirection="ascending"/>
+					</ColumnSortItems>
+				</MultidimensionalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="graphDefault" maxRowsBehavior="truncate" name="dd609"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+	</DataDefinitions>
+	<DataSources>
+		<DataSource label="DC_CRIME_INCIDENTS" type="relational" name="ds7">
+			<CasResource server="cas-shared-default" library="GPCI" table="DC_CRIME_INCIDENTS" locale="en_US"/>
+			<BusinessItemFolder>
+				<DataItem name="bi8" xref="BLOCK"/>
+				<DataItem name="bi9" xref="CENSUS_TRACT"/>
+				<DataItem name="bi10" xref="END_DATE"/>
+				<DataItem name="bi11" xref="offense"/>
+				<DataItem name="bi12" xref="START_DATE"/>
+				<DataItem name="bi13" xref="CCN" usage="categorical">
+					<GeoInfo geoType="column" coordinateSpace="WGS84">
+						<Lookup property="latitude" ref="bi15"/>
+						<Lookup property="longitude" ref="bi16"/>
+					</GeoInfo>
+				</DataItem>
+				<DataItem name="bi14" xref="WARD" usage="categorical"/>
+				<DataItem name="bi15" xref="LATITUDE"/>
+				<DataItem name="bi16" xref="LONGITUDE"/>
+				<DataItem name="bi17" xref="SHIFT"/>
+				<DataItem name="bi18" xref="NEIGHBORHOOD_CLUSTER"/>
+				<DataItem name="bi20" xref="offensegroup"/>
+				<DataItem name="bi21" xref="DISTRICT" usage="categorical"/>
+				<DataItem name="bi22" xref="PSA" usage="categorical">
+					<GeoInfo geoType="column" coordinateSpace="custom" customCoordinateSpace="EPSG:4326" regionMapProvider="dc_police">
+						<Lookup property="polygonId" ref="bi22"/>
+					</GeoInfo>
+					<GeoInfo geoType="mapProvider" coordinateSpace="custom" customCoordinateSpace="EPSG:4326" regionMapProvider="dc_police">
+						<Lookup property="latitude" ref="bi22"/>
+						<Lookup property="longitude" ref="bi22"/>
+					</GeoInfo>
+				</DataItem>
+				<DataItem name="bi23" xref="ps_address"/>
+				<DataItem name="bi24" xref="ps_contact"/>
+				<DataItem name="bi25" xref="ps_name" usage="categorical">
+					<GeoInfo geoType="column" coordinateSpace="WGS84">
+						<Lookup property="latitude" ref="bi150"/>
+						<Lookup property="longitude" ref="bi151"/>
+					</GeoInfo>
+				</DataItem>
+				<DataItem name="bi26" xref="ps_type"/>
+				<DataItem name="bi27" xref="ps_zip"/>
+				<DataItem name="bi28" xref="METHOD"/>
+				<PredefinedDataItem calculation="totalCount" name="bi29" label="Frequency" usage="quantitative" format="COMMA12."/>
+				<PredefinedDataItem calculation="totalCountPercent" name="bi30" label="Frequency Percent" usage="quantitative" format="PERCENT20."/>
+				<DataItem name="bi91" label="Crime Year" xref="START_DATE" format="DTYEAR4"/>
+				<AggregateCalculatedItem dataType="double" name="bi98" label="Crime Count" format="COMMA12.">
+					<Expression>aggregate(countDistinct,group,${bi13,binned})</Expression>
+				</AggregateCalculatedItem>
+				<DataItem name="bi150" xref="ps_latitude"/>
+				<DataItem name="bi151" xref="ps_longitude"/>
+				<RelationalFilterItem name="bi292">
+					<Expression>between(${bi91,binned},1861920000,1893456000)</Expression>
+				</RelationalFilterItem>
+				<AggregateCalculatedItem dataType="double" name="bi318" label="Difference Last Year" format="COMMA12.">
+					<Expression>minus(relativePeriod(sum,${bi29,raw},timeframeFiltersIgnored,${bi12,raw},inferred,0,full),relativePeriod(sum,${bi29,raw},timeframeFiltersIgnored,${bi12,raw},inferred,-1,full))</Expression>
+				</AggregateCalculatedItem>
+				<DataItem name="bi447" label="Crime Start DayMonth" xref="START_DATE" format="DTMONYY7"/>
+				<CalculatedItem dataType="date" name="bi507" label="Crime Start Month" usage="categorical" format="MONTH7" aggregation="sum">
+					<Expression>datepart(${bi12,binned})</Expression>
+				</CalculatedItem>
+				<CalculatedItem dataType="date" name="bi560" label="Crime Start Day" usage="categorical" format="DOWNAME1" aggregation="sum">
+					<Expression>datepart(${bi12,binned})</Expression>
+				</CalculatedItem>
+			</BusinessItemFolder>
+			<AppliedFilters>
+				<DataSourceSubsetFilters>
+					<BusinessItem ref="bi292"/>
+				</DataSourceSubsetFilters>
+			</AppliedFilters>
+		</DataSource>
+		<DataSource label="EsriMapProvider" type="mapprovider" name="ds141">
+			<EsriMapProvider url="https://services.arcgisonline.com/ArcGIS/rest/services" service="Reference/World_Boundaries_and_Places"/>
+		</DataSource>
+	</DataSources>
+	<VisualElements>
+		<Graph graphType="geo" graphSubType="geoRegion" supplementalVisuals="ve148 ve149 ve253" mapData="dd139" resultDefinitions="dd104 dd113 dd237" name="ve32" data="dd102" label="Geo region-coordinate - Police Service Areas 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi128 bi136 bi252">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+				<Property key="derivedVisualType">true</Property>
+			</EditorProperties>
+			<Title><P><Span>Crime hotspots by MPD Police Service Areas (PSA)</Span></P></Title>
+			<Conditions>
+				<Condition ref="cd167" nonVisual="false">
+					<ConditionParameters>
+						<ConditionParameter variable="bi1" parameter="*"/>
+					</ConditionParameters>
+				</Condition>
+			</Conditions>
+<![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel" labelingLimit="500" overplottingPolicy="REDUCEMARKERSIZE">
+    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
+    <Meta>
+        <DataNameMap>
+            <Entry model="LayoutOverlayMap_1" data="dd104"/>
+        </DataNameMap>
+    </Meta>
+    <LayoutOverlayMap name="LayoutOverlayMap_1" cycleColorResponses="true" dataLabelThinPolicy="nonoverlapping">
+        <MapLayer name="MapLayer" dataTransparency="0.00999999977" visible="true"/>
+        <MapRegionLayer name="Regions" dataTransparency="0.75" auxiliary="Role1 Role1" tip="Role2 Role3" identification="dd104#bi126" colorResponse="dd104#bi145" dataLabel="dd104#bi144">
+            <Roles>
+                <Role name="Role1" type="variable">dd104#bi144</Role>
+                <Role name="Role2" type="variable">dd104#bi146</Role>
+                <Role name="Role3" type="variable">dd104#bi147</Role>
+            </Roles>
+            <DataLabelAttrs size="8pt" weight="bold" style="normal" color="11581378"/>
+            <DataValueAttrs size="9pt" transparency="1"/>
+        </MapRegionLayer>
+        <ScatterPlot name="Scatter" dataTransparency="0.100000001" tipListPolicy="replace" includeMissingGroup="true" sizeMax="42px" sizeMin="14px" auxiliary="Role1 Role1" tip="Role2 Role3 Role4 Role5 Role6" x="dd113#bi131" y="dd113#bi132">
+            <ProximityClusterOptions proximityCluster="auto" clusterDistance="150px"/>
+            <Roles>
+                <Role name="Role1" type="variable">dd113#bi155</Role>
+                <Role name="Role2" type="variable">dd113#bi156</Role>
+                <Role name="Role3" type="variable">dd113#bi159</Role>
+                <Role name="Role4" type="variable">dd113#bi161</Role>
+                <Role name="Role5" type="variable">dd113#bi163</Role>
+                <Role name="Role6" type="variable">dd113#bi170</Role>
+            </Roles>
+            <DataLabelAttrs transparency="1"/>
+            <MarkerAttrs size="22px"/>
+        </ScatterPlot>
+        <ContourPlotParm name="Contour" dataTransparency="0.100000001" contourType="gradient" nLevels="7" transparencyRampType="one_color" auxiliary="Role1 Role1" tip="Role2 Role3" x="dd237#bi247" y="dd237#bi248" z="dd237#bi260">
+            <TransparencyRampOpts color="14505815" transparencyEnd="0.100000001"/>
+            <Roles>
+                <Role name="Role1" type="variable">dd237#bi257</Role>
+                <Role name="Role2" type="variable">dd237#bi258</Role>
+                <Role name="Role3" type="variable">dd237#bi261</Role>
+            </Roles>
+            <LineLabelAttrs transparency="1"/>
+        </ContourPlotParm>
+    </LayoutOverlayMap>
+    <LayoutGlobalLegend border="false" hAlign="right" vAlign="center" legendTitlePosition="top" position="right" allowCollapsed="false" visible="off">
+        <ContinuousLegend border="false" opaque="false" displayMissing="automatic" extractScale="true" title_type="KEYWORD" title="AUTO">
+            <GraphNames>
+                <Value>Regions</Value>
+            </GraphNames>
+        </ContinuousLegend>
+        <AutoLegend sortOrder="ascending">
+            <GraphNames>
+                <Value>Regions</Value>
+            </GraphNames>
+        </AutoLegend>
+        <ContinuousLegend border="false" opaque="false" displayMissing="automatic" extractScale="true" title_type="KEYWORD" title="AUTO">
+            <GraphNames>
+                <Value>Scatter</Value>
+            </GraphNames>
+        </ContinuousLegend>
+        <SizeLegend border="false" opaque="false" extractScale="true" title_type="KEYWORD" title="AUTO">
+            <GraphNames>
+                <Value>Scatter</Value>
+            </GraphNames>
+        </SizeLegend>
+        <AutoLegend sortOrder="ascending">
+            <GraphNames>
+                <Value>Scatter</Value>
+            </GraphNames>
+        </AutoLegend>
+        <ContinuousLegend border="false" opaque="false" vAlign="bottom" valueStyle="inflections" displayMissing="automatic" extractScale="true" type="fillcolor" title_type="KEYWORD" title="AUTO">
+            <PadAttrs top="2px" bottom="2px" left="2px" right="2px"/>
+            <GraphNames>
+                <Value>Contour</Value>
+            </GraphNames>
+        </ContinuousLegend>
+    </LayoutGlobalLegend>
+    <Animation keyFrameSortOrder="ascending_unformatted"/>
+</StatGraph>
+]]>
+		</Graph>
+		<Crosstab layout="indented" measureSizing="autoFill" resultDefinitions="dd309" name="ve310" data="dd307" label="Crosstab - Crime Year 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi305 bi303">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Title><P><Span>Property Crimes</Span></P></Title>
+			<Axes>
+				<Axis type="row">
+					<Hierarchy name="ve311" variable="bi305"/>
+				</Axis>
+				<Axis type="column">
+					<Hierarchy name="ve312" variable="bi303"/>
+					<Measures>
+						<Measure compactFormat="false" name="ve313" class="measurebi304" variable="bi304">
+							<Cell>
+								<CellVisuals nestedElementPosition="left">
+									<SparkValue type="bar" response="bi304" name="cv349"/>
+								</CellVisuals>
+							</Cell>
+						</Measure>
+						<Measure compactFormat="false" name="ve320" variable="bi319">
+							<Cell>
+								<CellVisuals nestedElementPosition="left">
+									<SparkValue type="bar" response="bi319" name="cv322"/>
+								</CellVisuals>
+							</Cell>
+							<Conditions>
+								<Condition ref="cd324" nonVisual="false">
+									<ConditionParameters>
+										<ConditionParameter variable="bi1" parameter="bi319"/>
+									</ConditionParameters>
+								</Condition>
+								<Condition ref="cd326" nonVisual="false">
+									<ConditionParameters>
+										<ConditionParameter variable="bi1" parameter="bi319"/>
+									</ConditionParameters>
+								</Condition>
+							</Conditions>
+						</Measure>
+					</Measures>
+				</Axis>
+			</Axes>
+			<Summary>
+				<Total columnVisible="false" rowVisible="false"/>
+				<Subtotal columnVisible="true" rowVisible="true"/>
+			</Summary>
+		</Crosstab>
+		<Crosstab layout="indented" measureSizing="autoFill" resultDefinitions="dd336" name="ve341" data="dd334" label="Crosstab - Crime Year 2" applyDynamicBrushes="yes" sourceInteractionVariables="bi331 bi328">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Title><P><Span>Violent Crimes</Span></P></Title>
+			<Axes>
+				<Axis type="row">
+					<Hierarchy name="ve342" class="hierarchybi331" variable="bi331"/>
+				</Axis>
+				<Axis type="column">
+					<Hierarchy name="ve343" variable="bi328"/>
+					<Measures>
+						<Measure compactFormat="false" name="ve344" class="measurebi329" variable="bi329">
+							<Cell>
+								<CellVisuals nestedElementPosition="left">
+									<SparkValue type="bar" response="bi329" name="cv348"/>
+								</CellVisuals>
+							</Cell>
+						</Measure>
+						<Measure compactFormat="false" name="ve345" class="measurebi330" variable="bi330">
+							<Cell>
+								<CellVisuals nestedElementPosition="left">
+									<SparkValue type="bar" response="bi330" name="cv346"/>
+								</CellVisuals>
+							</Cell>
+							<Conditions>
+								<Condition ref="cd337" nonVisual="false">
+									<ConditionParameters>
+										<ConditionParameter variable="bi1" parameter="bi330"/>
+									</ConditionParameters>
+								</Condition>
+								<Condition ref="cd339" nonVisual="false">
+									<ConditionParameters>
+										<ConditionParameter variable="bi1" parameter="bi330"/>
+									</ConditionParameters>
+								</Condition>
+							</Conditions>
+						</Measure>
+					</Measures>
+				</Axis>
+			</Axes>
+			<Summary>
+				<Total columnVisible="false" rowVisible="false"/>
+				<Subtotal columnVisible="true" rowVisible="true"/>
+			</Summary>
+		</Crosstab>
+		<Graph graphType="keyValue" supplementalVisuals="ve355" resultDefinitions="dd354" name="ve351" data="dd352" label="Key value - Crime Year 1" applyDynamicBrushes="no" sourceInteractionVariables="bi357">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Title><P><Span>Change compared to last year</Span></P></Title>
+<![CDATA[<StatGraph border="false" opaque="false" missingValueDisplay="autolabel">
+    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
+    <Meta>
+        <DynVars>
+            <DynVar name="CATEGORY" description="CATEGORY_VAR" required="false" assignedType="time" type="character">
+                <DefaultValues>
+                    <Value>dd354.bi357</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="RESPONSE" description="MEASURE_VAR" required="true" assignedType="numeric" type="numeric">
+                <DefaultValues>
+                    <Value>dd354.bi356</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="TIP" description="TIP_VAR" required="false" assignedType="time" type="any" multiplesAllowed="true">
+                <DefaultValues>
+                    <Value>dd354.bi356</Value>
+                    <Value>dd354.bi357</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="HIDDEN" description="HIDDEN_VAR" required="false" type="character" multiplesAllowed="true"/>
+        </DynVars>
+    </Meta>
+    <LayoutRegion>
+        <KeyValue name="KeyValue" tipListPolicy="replace" _stmt="keyValue" display="CATEGORYLABEL CATEGORYVALUE RESPONSEVALUE" hAlign="left" justify="left" key="responsevalue" vAlign="bottom" tip="TIP" category="CATEGORY" response="RESPONSE">
+            <KeyAttrs color="2388141"/>
+        </KeyValue>
+    </LayoutRegion>
+</StatGraph>
+]]>
+		</Graph>
+		<Table columnSizing="autoFill" resultDefinitions="dd354" name="ve355" data="dd352" applyDynamicBrushes="yes" sourceInteractionVariables="bi357">
+			<Columns>
+				<Column variable="bi357"/>
+				<Column variable="bi356"/>
+			</Columns>
+		</Table>
+		<Graph graphType="timeSeries" supplementalVisuals="ve366" resultDefinitions="dd364" name="ve361" data="dd362" label="Time - Crime Start Date 1" applyDynamicBrushes="yes">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+				<Property key="timeSeriesBinOption">calendar</Property>
+				<Property key="timeSeriesFixedBinCardinality">300</Property>
+			</EditorProperties>
+			<Title><P><Span>Change over time - Offenses by month</Span></P></Title>
+<![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
+    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
+    <Meta>
+        <DynVars>
+            <DynVar name="TIME" description="TIME_VAR" required="true" assignedType="any" type="time">
+                <DefaultValues>
+                    <Value>dd364.bi367</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="RESPONSE" description="RESPONSE_VAR" required="true" assignedType="any" type="numeric" multiplesAllowed="true">
+                <DefaultValues>
+                    <Value>dd364.bi371</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="GROUP" description="SUBGROUP_VAR" required="false" assignedType="any" type="character">
+                <DefaultValues>
+                    <Value>dd364.bi370</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="TIP" description="TIP_VAR" required="false" assignedType="numeric" type="any" multiplesAllowed="true">
+                <DefaultValues>
+                    <Value>dd364.bi367</Value>
+                    <Value>dd364.bi370</Value>
+                    <Value>dd364.bi371</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="HIDDEN" description="HIDDEN_VAR" required="false" type="character" multiplesAllowed="true"/>
+        </DynVars>
+        <DataNameMap>
+            <Entry model="LayoutDataMatrix_75" data="dd364"/>
+        </DataNameMap>
+    </Meta>
+    <LayoutDataMatrix name="LayoutDataMatrix_75" cellHeightMin="1px" cellWidthMin="1px" includeMissingClass="true">
+        <LayoutPrototypeOverlay2D>
+            <TimeSeriesPlot name="TimeSeriesPlot" tipListPolicy="replace" _stmt="timeseriesplot" primary="true" break="true" fadeType="auto" display="MARKERS NOFILL" groupDisplay="overlay" tip="TIP" group="GROUP" time="TIME" responseVars="RESPONSE">
+                <LineAttrs thickness="3px"/>
+                <MarkerAttrs size="4px"/>
+            </TimeSeriesPlot>
+            <XAxisOpts name="categoryAxis" display="TICKVALUES" gridDisplay="off">
+                <DiscreteOpts tickValueAppearance="auto"/>
+                <TimeOpts splitTickValue="false" tickValueFormat="DATA"/>
+            </XAxisOpts>
+            <YAxisOpts display="TICKVALUES" gridDisplay="off" reverse="false">
+                <DiscreteOpts/>
+                <LinearOpts>
+                    <TickValueFormatOpts extractScale="true"/>
+                </LinearOpts>
+                <TimeOpts/>
+            </YAxisOpts>
+        </LayoutPrototypeOverlay2D>
+    </LayoutDataMatrix>
+    <LayoutGlobalLegend hAlign="right" vAlign="center" legendTitlePosition="top" position="right" allowCollapsed="true">
+        <AutoLegend sortOrder="ascending">
+            <GraphNames>
+                <Value>TimeSeriesPlot</Value>
+            </GraphNames>
+        </AutoLegend>
+    </LayoutGlobalLegend>
+    <OverviewAxis maxPlotSize="60px" minPlotSize="35px" visible="off" axis="categoryAxis"/>
+</StatGraph>
+]]>
+		</Graph>
+		<Table columnSizing="autoFill" resultDefinitions="dd364" name="ve366" data="dd362" applyDynamicBrushes="yes" sourceInteractionVariables="bi367 bi370">
+			<Columns>
+				<Column variable="bi367"/>
+				<Column variable="bi371"/>
+				<Column variable="bi370"/>
+			</Columns>
+		</Table>
+		<Text name="ve468" label="Text 1" selectionDisabled="true" applyDynamicBrushes="no">
+			<P><Span class="span1"><Span class="span2">MAPPING          CRIMES</Span></Span></P>
+			<P><Span class="span3"><Span class="span4">Washington D.C.</Span></Span></P>
+			<P><Span><Span class="span5">Data</Span><Span>: DC Metropolitan Police Department (MPD), https://dcatlas.dcgis.dc.gov/crimecards</Span></Span></P>
+			<P><Span><Span class="span6">Design</Span><Span>: Falko.Schulz@sas.com, 2021</Span></Span></P>
+			<P><Span><Span class="span7">Product</Span><Span>: SAS Visual Analytics on SAS Viya</Span></Span></P>
+		</Text>
+		<VisualContainer containerType="precision" name="ve473" label="Precision container 1" selectionDisabled="true">
+			<EditorProperties>
+				<Property key="isPrecision">true</Property>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+		</VisualContainer>
+		<Graph graphType="pcPlot" supplementalVisuals="ve534" resultDefinitions="dd531 dd532" name="ve517" data="dd518" label="Parallel coordinates plot - MPD Shift 1" applyDynamicBrushes="no">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Title><P><Span>Almost half of the crimes occur in the evening</Span></P></Title>
+<![CDATA[<StatGraph opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel">
+    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
+    <Meta>
+        <DataNameMap>
+            <Entry model="ParallelCoordinatesPlot_1" data="dd531"/>
+            <Entry model="BinMetadata_1" data="dd532"/>
+        </DataNameMap>
+    </Meta>
+    <LayoutRegion>
+        <ParallelCoordinatesPlot name="ParallelCoordinatesPlot_1" dataTransparency="0.5" smoothConnect="true" lineWidthResponse="dd531#bi521">
+            <BinMetadata dataField="dd532#bi524" size="dd532#bi526" start="dd532#bi525" count="dd532#bi527" name="BinMetadata_1"/>
+            <Response>
+                <Value>dd531#bi541</Value>
+                <Value>dd531#bi542</Value>
+                <Value>dd531#bi544</Value>
+            </Response>
+            <ParallelAxisOpts>
+                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response1">
+                </AxisOpts>
+                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response2">
+                </AxisOpts>
+                <AxisOpts discreteSortOrder="ascendingunformatted" type="discrete" name="response3">
+                </AxisOpts>
+            </ParallelAxisOpts>
+        </ParallelCoordinatesPlot>
+    </LayoutRegion>
+</StatGraph>
+]]>
+		</Graph>
+		<Table columnSizing="autoFill" resultDefinitions="dd531" name="ve534" data="dd518" applyDynamicBrushes="yes">
+			<Columns>
+				<Column variable="bi541"/>
+				<Column variable="bi542"/>
+				<Column variable="bi544"/>
+				<Column variable="bi521"/>
+			</Columns>
+		</Table>
+		<Graph graphType="keyValue" supplementalVisuals="ve551" resultDefinitions="dd545" name="ve552" data="dd549" label="Key value - MPD Shift 1" applyDynamicBrushes="no" sourceInteractionVariables="bi554">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Title><P><Span>When do crimes occur?</Span></P></Title>
+<![CDATA[<StatGraph border="false" opaque="false" missingValueDisplay="autolabel">
+    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
+    <Meta>
+        <DynVars>
+            <DynVar name="CATEGORY" description="CATEGORY_VAR" required="false" assignedType="character" type="character">
+                <DefaultValues>
+                    <Value>dd545.bi554</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="RESPONSE" description="MEASURE_VAR" required="true" assignedType="numeric" type="numeric">
+                <DefaultValues>
+                    <Value>dd545.bi555</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="TIP" description="TIP_VAR" required="false" assignedType="numeric" type="any" multiplesAllowed="true">
+                <DefaultValues>
+                    <Value>dd545.bi554</Value>
+                    <Value>dd545.bi555</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="HIDDEN" description="HIDDEN_VAR" required="false" type="character" multiplesAllowed="true"/>
+        </DynVars>
+    </Meta>
+    <LayoutRegion>
+        <KeyValue name="KeyValue" tipListPolicy="replace" _stmt="keyValue" display="CATEGORYLABEL CATEGORYVALUE RESPONSEVALUE" hAlign="left" justify="left" key="responsevalue" vAlign="bottom" tip="TIP" category="CATEGORY" response="RESPONSE">
+            <CategoryValueAttrs color="15330543"/>
+            <KeyAttrs color="2388141"/>
+        </KeyValue>
+    </LayoutRegion>
+</StatGraph>
+]]>
+		</Graph>
+		<Table columnSizing="autoFill" resultDefinitions="dd545" name="ve551" data="dd549" applyDynamicBrushes="yes" sourceInteractionVariables="bi554">
+			<Columns>
+				<Column variable="bi554"/>
+				<Column variable="bi555"/>
+			</Columns>
+		</Table>
+		<Image scaleType="scale" file="ve557.png" name="ve557" label="Image 1" selectionDisabled="true"/>
+		<Image scaleType="scaleToFit" file="ve559.jpg" name="ve559" label="CrimeSceneBackground" selectionDisabled="true"/>
+		<Graph graphType="bar" supplementalVisuals="ve566" resultDefinitions="dd565" name="ve562" data="dd563" label="Bar - Crime Start Day 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi567 bi571">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Title><P><Span>Weekday distribution</Span></P></Title>
+<![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel">
+    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
+    <Meta>
+        <DynVars>
+            <DynVar name="CATEGORY" description="CATEGORY_VAR" required="true" assignedType="time" type="character">
+                <DefaultValues>
+                    <Value>dd565.bi567</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="RESPONSE" description="MEASURE_VAR" required="true" assignedType="numeric" type="numeric" multiplesAllowed="true">
+                <DefaultValues>
+                    <Value>dd565.bi569</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="GROUP" description="SUBGROUP_VAR" required="false" assignedType="character" type="character">
+                <DefaultValues>
+                    <Value>dd565.bi571</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="COLUMN" description="HORIZONTAL_SERIES_VAR" required="false" type="character" multiplesAllowed="true"/>
+            <DynVar name="ROW" description="VERTICAL_SERIES_VAR" required="false" type="character" multiplesAllowed="true"/>
+            <DynVar name="TIP" description="TIP_VAR" required="false" assignedType="character" type="any" multiplesAllowed="true">
+                <DefaultValues>
+                    <Value>dd565.bi567</Value>
+                    <Value>dd565.bi569</Value>
+                    <Value>dd565.bi571</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="KEY_FRAME" description="ANIMATION" required="false" type="time" multiplesAllowed="false"/>
+            <DynVar name="HIDDEN" description="HIDDEN_VAR" required="false" type="character" multiplesAllowed="true"/>
+        </DynVars>
+        <DataNameMap>
+            <Entry model="LayoutDataMatrix_99" data="dd565"/>
+        </DataNameMap>
+    </Meta>
+    <LayoutDataMatrix name="LayoutDataMatrix_99" cellHeightMin="1px" cellWidthMin="1px" includeMissingClass="true" rowVars="ROW" columnVars="COLUMN">
+        <LayoutPrototypeOverlay2D>
+            <BarChartParm name="BarChart" dataTransparency="0.300000011" tipListPolicy="replace" _stmt="barchart" groupDisplay="stack" groupOrder="data" orient="vertical" stat="none" segmentLabel="true" tip="TIP" category="CATEGORY" responseVars="RESPONSE" group="GROUP" categoryOrderRole="response">
+                <SegmentLabelAttrs size="12pt"/>
+            </BarChartParm>
+            <XAxisOpts display="TICKVALUES" gridDisplay="off" reverse="false">
+                <DiscreteOpts tickValueFitPolicy="staggertruncatedrop" sortOrder="data" tickValueAppearance="auto"/>
+                <LinearOpts>
+                    <TickValueFormatOpts extractScale="true"/>
+                </LinearOpts>
+                <TickValueAttrs size="12pt"/>
+            </XAxisOpts>
+            <YAxisOpts name="categoryAxis" display="NONE" gridDisplay="off">
+                <DiscreteOpts sortOrder="data"/>
+                <LinearOpts>
+                    <TickValueFormatOpts extractScale="true"/>
+                </LinearOpts>
+            </YAxisOpts>
+        </LayoutPrototypeOverlay2D>
+    </LayoutDataMatrix>
+    <LayoutGlobalLegend hAlign="right" vAlign="center" legendTitlePosition="top" position="right" allowCollapsed="true">
+        <AutoLegend sortOrder="ascending">
+            <GraphNames>
+                <Value>BarChart</Value>
+            </GraphNames>
+        </AutoLegend>
+    </LayoutGlobalLegend>
+    <Animation keyFrameSortOrder="ascending_unformatted" keyFrame="KEY_FRAME"/>
+    <OverviewAxis maxPlotSize="60px" minPlotSize="35px" visible="off" axis="categoryAxis"/>
+</StatGraph>
+]]>
+		</Graph>
+		<Table columnSizing="autoFill" resultDefinitions="dd565" name="ve566" data="dd563" applyDynamicBrushes="yes" sourceInteractionVariables="bi567 bi571">
+			<Columns>
+				<Column variable="bi567"/>
+				<Column variable="bi569"/>
+				<Column variable="bi571"/>
+			</Columns>
+		</Table>
+		<Image scaleType="scale" file="ve573.png" name="ve573" label="Image 2" selectionDisabled="true"/>
+		<Image scaleType="scale" file="ve575.png" name="ve575" label="Image 3" selectionDisabled="true"/>
+		<Image scaleType="scale" file="ve576.png" name="ve576" label="Image 3 (1)" selectionDisabled="true"/>
+		<Image scaleType="scale" file="ve578.png" name="ve578" label="Image 3 (1) (1)" selectionDisabled="true"/>
+		<Image scaleType="scale" file="ve580.png" name="ve580" label="Image 3 (1) (2)" selectionDisabled="true"/>
+		<Image scaleType="scale" file="ve582.png" name="ve582" label="Image 3 (1) (3)" selectionDisabled="true"/>
+		<Image scaleType="scale" file="ve584.png" name="ve584" label="Image 3 (2)" selectionDisabled="true"/>
+		<Graph graphType="bar" supplementalVisuals="ve610" resultDefinitions="dd609" name="ve606" data="dd607" label="Bar - Police Service Areas 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi611">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Title><P><Span>PSA Crime Count</Span></P></Title>
+			<Conditions>
+				<Condition ref="cd625">
+					<ConditionParameters>
+						<ConditionParameter variable="bi1" parameter="bi613"/>
+					</ConditionParameters>
+				</Condition>
+				<Condition ref="cd623">
+					<ConditionParameters>
+						<ConditionParameter variable="bi1" parameter="bi613"/>
+					</ConditionParameters>
+				</Condition>
+				<Condition ref="cd619">
+					<ConditionParameters>
+						<ConditionParameter variable="bi1" parameter="bi613"/>
+					</ConditionParameters>
+				</Condition>
+				<Condition ref="cd617">
+					<ConditionParameters>
+						<ConditionParameter variable="bi1" parameter="bi613"/>
+					</ConditionParameters>
+				</Condition>
+			</Conditions>
+<![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel">
+    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
+    <Meta>
+        <DynVars>
+            <DynVar name="CATEGORY" description="CATEGORY_VAR" required="true" assignedType="character" type="character">
+                <DefaultValues>
+                    <Value>dd609.bi611</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="RESPONSE" description="MEASURE_VAR" required="true" assignedType="numeric" type="numeric" multiplesAllowed="true">
+                <DefaultValues>
+                    <Value>dd609.bi613</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="GROUP" description="SUBGROUP_VAR" required="false" type="character"/>
+            <DynVar name="COLUMN" description="HORIZONTAL_SERIES_VAR" required="false" type="character" multiplesAllowed="true"/>
+            <DynVar name="ROW" description="VERTICAL_SERIES_VAR" required="false" type="character" multiplesAllowed="true"/>
+            <DynVar name="TIP" description="TIP_VAR" required="false" assignedType="numeric" type="any" multiplesAllowed="true">
+                <DefaultValues>
+                    <Value>dd609.bi611</Value>
+                    <Value>dd609.bi613</Value>
+                </DefaultValues>
+            </DynVar>
+            <DynVar name="KEY_FRAME" description="ANIMATION" required="false" type="time" multiplesAllowed="false"/>
+            <DynVar name="HIDDEN" description="HIDDEN_VAR" required="false" type="character" multiplesAllowed="true"/>
+        </DynVars>
+        <DataNameMap>
+            <Entry model="LayoutDataMatrix_175" data="dd609"/>
+        </DataNameMap>
+    </Meta>
+    <LayoutDataMatrix name="LayoutDataMatrix_175" cellHeightMin="1px" cellWidthMin="1px" includeMissingClass="true" rowVars="ROW" columnVars="COLUMN">
+        <LayoutPrototypeOverlay2D>
+            <BarChartParm name="BarChart" dataTransparency="0.100000001" tipListPolicy="replace" _stmt="barchart" groupDisplay="cluster" orient="horizontal" stat="none" tip="TIP" category="CATEGORY" responseVars="RESPONSE" group="GROUP"/>
+            <XAxisOpts name="categoryAxis" display="NONE" gridDisplay="off">
+                <DiscreteOpts sortOrder="data"/>
+                <LinearOpts>
+                    <TickValueFormatOpts extractScale="true"/>
+                </LinearOpts>
+            </XAxisOpts>
+            <YAxisOpts display="LINE TICKS TICKVALUES" gridDisplay="off" reverse="true">
+                <DiscreteOpts tickValueFitPolicy="staggertruncatedrop" sortOrder="data" tickValueAppearance="auto"/>
+                <LinearOpts>
+                    <TickValueFormatOpts extractScale="true"/>
+                </LinearOpts>
+            </YAxisOpts>
+        </LayoutPrototypeOverlay2D>
+    </LayoutDataMatrix>
+    <LayoutGlobalLegend legendTitlePosition="top" allowCollapsed="true">
+        <AutoLegend>
+            <GraphNames>
+                <Value>BarChart</Value>
+            </GraphNames>
+        </AutoLegend>
+    </LayoutGlobalLegend>
+    <Animation keyFrameSortOrder="ascending_unformatted" keyFrame="KEY_FRAME"/>
+    <OverviewAxis maxPlotSize="60px" minPlotSize="35px" visible="off" axis="categoryAxis"/>
+</StatGraph>
+]]>
+		</Graph>
+		<Table columnSizing="autoFill" resultDefinitions="dd609" name="ve610" data="dd607" applyDynamicBrushes="yes" sourceInteractionVariables="bi611">
+			<Columns>
+				<Column variable="bi611"/>
+				<Column variable="bi613"/>
+			</Columns>
+		</Table>
+		<Image scaleType="scaleToFit" file="ve627.png" name="ve627" label="Image 4" selectionDisabled="true"/>
+		<Table columnSizing="autoFill" resultDefinitions="dd104" name="ve148" data="dd102" applyDynamicBrushes="yes">
+			<Columns>
+				<Column variable="bi144"/>
+				<Column variable="bi145"/>
+			</Columns>
+		</Table>
+		<Table columnSizing="autoFill" resultDefinitions="dd113" name="ve149" data="dd102" applyDynamicBrushes="yes">
+			<Columns>
+				<Column variable="bi155"/>
+				<Column variable="bi159"/>
+				<Column variable="bi161"/>
+				<Column variable="bi163"/>
+				<Column variable="bi170"/>
+			</Columns>
+		</Table>
+		<Table columnSizing="autoFill" resultDefinitions="dd237" name="ve253" data="dd102" applyDynamicBrushes="yes">
+			<Columns>
+				<Column variable="bi260"/>
+			</Columns>
+		</Table>
+	</VisualElements>
+	<View fixedBodyWidth="1920px" fixedBodyHeight="1080px">
+		<Header>
+			<MediaContainer target="mt2">
+				<ResponsiveLayout orientation="horizontal" overflow="fit">
+					<Weights mediaTarget="mt5" unit="percent">
+						<Weight value="100%"/>
+					</Weights>
+					<Weights mediaTarget="mt4" unit="percent">
+						<Weight value="100%"/>
+					</Weights>
+					<Weights mediaTarget="mt3" unit="percent">
+						<Weight value="100%"/>
+					</Weights>
+				</ResponsiveLayout>
+			</MediaContainer>
+		</Header>
+		<Section name="vi6" label="Page 1">
+			<Header>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="horizontal" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+				</MediaContainer>
+			</Header>
+			<Body>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="vertical" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+					<Container ref="ve473" name="vi472">
+						<ResponsiveConstraint>
+							<WidthConstraint>
+								<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="shrinkable"/>
+							</WidthConstraint>
+							<HeightConstraint>
+								<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="shrinkable"/>
+							</HeightConstraint>
+						</ResponsiveConstraint>
+						<ResponsiveLayout orientation="vertical" overflow="fit">
+							<Weights mediaTarget="mt5" unit="percent">
+								<Weight value="100%"/>
+							</Weights>
+							<Weights mediaTarget="mt4" unit="percent">
+								<Weight value="100%"/>
+							</Weights>
+							<Weights mediaTarget="mt3" unit="percent">
+								<Weight value="100%"/>
+							</Weights>
+						</ResponsiveLayout>
+						<Visual ref="ve559" name="vi558">
+							<ResponsiveConstraint zIndex="1">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="100%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="100%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="0%"/>
+								<HorizontalConstraint anchor="vi472" offset="0%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve468" name="vi467">
+							<ResponsiveConstraint zIndex="2">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="23.96%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="20%" flexibility="fixed"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="2%"/>
+								<HorizontalConstraint anchor="vi472" offset="2%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve351" name="vi350">
+							<ResponsiveConstraint zIndex="19">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="10%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="13.81%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="0%"/>
+								<HorizontalConstraint anchor="vi472" offset="40%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve552" name="vi553">
+							<ResponsiveConstraint zIndex="20">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="10%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="13.81%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="0%"/>
+								<HorizontalConstraint anchor="vi472" offset="30%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve341" name="vi347">
+							<ResponsiveConstraint zIndex="3">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="27%" flexibility="flexible"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="22.9%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="50%"/>
+								<HorizontalConstraint anchor="vi472" offset="2%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve310" name="vi314">
+							<ResponsiveConstraint zIndex="4">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="27%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="22.9%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="75.19%"/>
+								<HorizontalConstraint anchor="vi472" offset="2%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve32" name="vi31">
+							<ResponsiveConstraint zIndex="5">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="39%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="77.82%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="20%"/>
+								<HorizontalConstraint anchor="vi472" offset="51%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve361" name="vi360">
+							<ResponsiveConstraint zIndex="6">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="47.92%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="28.24%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="20%"/>
+								<HorizontalConstraint anchor="vi472" offset="2%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve517" name="vi516">
+							<ResponsiveConstraint zIndex="7">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="19.87%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="47.91%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="50%"/>
+								<HorizontalConstraint anchor="vi472" offset="30%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve557" name="vi556">
+							<ResponsiveConstraint zIndex="8">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="10%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="15.91%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="2%"/>
+								<HorizontalConstraint anchor="vi472" offset="90%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve562" name="vi561">
+							<ResponsiveConstraint zIndex="9">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="39%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="16%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="2%"/>
+								<HorizontalConstraint anchor="vi472" offset="51%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve573" name="vi572">
+							<ResponsiveConstraint zIndex="10">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="3%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="7.22%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="2%"/>
+								<HorizontalConstraint anchor="vi472" offset="12.5%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve575" name="vi574">
+							<ResponsiveConstraint zIndex="11">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="3%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="5%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="20%"/>
+								<HorizontalConstraint anchor="vi472" offset="47%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve584" name="vi585">
+							<ResponsiveConstraint zIndex="16">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="3%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="5%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="2%"/>
+								<HorizontalConstraint anchor="vi472" offset="86.95%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve576" name="vi577">
+							<ResponsiveConstraint zIndex="12">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="3%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="5%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="50%"/>
+								<HorizontalConstraint anchor="vi472" offset="47%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve582" name="vi583">
+							<ResponsiveConstraint zIndex="15">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="3%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="5%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="75.19%"/>
+								<HorizontalConstraint anchor="vi472" offset="25.96%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve580" name="vi581">
+							<ResponsiveConstraint zIndex="14">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="3%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="5%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="50%"/>
+								<HorizontalConstraint anchor="vi472" offset="25.96%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve578" name="vi579">
+							<ResponsiveConstraint zIndex="13">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="3%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="5%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="20%"/>
+								<HorizontalConstraint anchor="vi472" offset="86.95%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve606" name="vi605">
+							<ResponsiveConstraint zIndex="17">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="6%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="78%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="20%"/>
+								<HorizontalConstraint anchor="vi472" offset="92%"/>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve627" name="vi626">
+							<ResponsiveConstraint zIndex="18">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="30%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="17.59%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi472" offset="2%"/>
+								<HorizontalConstraint anchor="vi472" offset="18.5%"/>
+							</ResponsiveConstraint>
+						</Visual>
+					</Container>
+				</MediaContainer>
+			</Body>
+		</Section>
+	</View>
+	<Conditions>
+		<Condition scope="local" name="cd167">
+			<ConditionVariables>
+				<ConditionVariable variable="bi1" type="numeric"/>
+			</ConditionVariables>
+			<If icon="" name="cc166" class="If">
+				<Expression>gt(${bi1},0)</Expression>
+			</If>
+		</Condition>
+		<Condition scope="local" name="cd324">
+			<ConditionVariables>
+				<ConditionVariable variable="bi1" type="numeric"/>
+			</ConditionVariables>
+			<If name="cc323" class="If">
+				<Expression>gt(${bi1},0)</Expression>
+			</If>
+		</Condition>
+		<Condition scope="local" name="cd326">
+			<ConditionVariables>
+				<ConditionVariable variable="bi1" type="numeric"/>
+			</ConditionVariables>
+			<If name="cc325" class="If">
+				<Expression>le(${bi1},0)</Expression>
+			</If>
+		</Condition>
+		<Condition scope="local" name="cd337">
+			<ConditionVariables>
+				<ConditionVariable variable="bi1" type="numeric"/>
+			</ConditionVariables>
+			<If name="cc338" class="If">
+				<Expression>gt(${bi1},0)</Expression>
+			</If>
+		</Condition>
+		<Condition scope="local" name="cd339">
+			<ConditionVariables>
+				<ConditionVariable variable="bi1" type="numeric"/>
+			</ConditionVariables>
+			<If name="cc340" class="If">
+				<Expression>le(${bi1},0)</Expression>
+			</If>
+		</Condition>
+		<Condition scope="local" name="cd617">
+			<ConditionVariables>
+				<ConditionVariable variable="bi1" type="numeric"/>
+			</ConditionVariables>
+			<If name="cc616" class="If">
+				<Expression>gt(${bi1},2000)</Expression>
+			</If>
+		</Condition>
+		<Condition scope="local" name="cd619">
+			<ConditionVariables>
+				<ConditionVariable variable="bi1" type="numeric"/>
+			</ConditionVariables>
+			<If name="cc618" class="If">
+				<Expression>gt(${bi1},1000)</Expression>
+			</If>
+		</Condition>
+		<Condition scope="local" name="cd623">
+			<ConditionVariables>
+				<ConditionVariable variable="bi1" type="numeric"/>
+			</ConditionVariables>
+			<If name="cc622" class="If">
+				<Expression>gt(${bi1},500)</Expression>
+			</If>
+		</Condition>
+		<Condition scope="local" name="cd625">
+			<ConditionVariables>
+				<ConditionVariable variable="bi1" type="numeric"/>
+			</ConditionVariables>
+			<If name="cc624" class="If">
+				<Expression>gt(${bi1},0)</Expression>
+			</If>
+		</Condition>
+	</Conditions>
+	<MediaSchemes>
+		<MediaScheme name="ms1">
+			<BaseStylesheetResource file="basems1.css" theme="midnight2020"/>
+			<StylesheetFile file="ms1.css"/>
+		</MediaScheme>
+	</MediaSchemes>
+	<MediaTargets>
+		<MediaTarget windowSize="default" scheme="ms1" name="mt2"/>
+		<MediaTarget windowSize="small" scheme="ms1" name="mt3"/>
+		<MediaTarget windowSize="medium" scheme="ms1" name="mt4"/>
+		<MediaTarget windowSize="large" scheme="ms1" name="mt5"/>
+	</MediaTargets>
+	<Properties>
+		<Property key="displayDataSource">ds7</Property>
+		<Property key="loadedFromXML">true</Property>
+		<Property key="ReportPackagesServiceVersion">2020.1.4</Property>
+		<Property key="ReportDataServiceVersion">2020.1.4</Property>
+	</Properties>
+	<ExportProperties>
+		<Export destination="pdf">
+			<Property key="showCoverPage" value="true"></Property>
+			<Property key="showPageNumbers" value="true"></Property>
+		</Export>
+	</ExportProperties>
+	<History>
+	<Versions>
+		<Version key="4.4.0" lastDate="2020-12-23T00:00:00Z"/>
+		<Version key="4.16.0" lastDate="2022-03-27T00:00:00Z"/>
+	</Versions>
+	<Conversions>
+		<Conversion startVersion="4.4.0" finalVersion="4.16.0" date="2022-03-27T00:00:00Z"/>
+		<Conversion startVersion="4.16.0" finalVersion="4.19.0" date="2022-07-13T00:00:00Z"/>
+	</Conversions>
+	<Editors>
+		<Editor applicationName="VA">
+			<Revision editorVersion="2020" lastDate="2021-01-06T06:40:47.155Z"/>
+			<Revision editorVersion="2021.2.3" lastDate="2022-03-29T20:26:51.327Z"/>
+		</Editor>
+	</Editors>
+</History>
+	<SASReportState date="2022-03-29T20:26:51Z">
+		<VisualElements>
+			<GraphState element="ve32">
+				<RendererStates>
+					<LayoutOverlayMap/>
+				</RendererStates>
+			</GraphState>
+		</VisualElements>
+		<View/>
+	</SASReportState>
+</SASReport>

@@ -1,0 +1,14 @@
+Automated explanation - Influencer 1
+  Interactivity for this object is limited for the following reasons:
+    * Actions for composite objects are not supported.
+  These reasons may only be a problem because of these data complexities:
+    * This object uses a data source with a derived column.
+
+Automated prediction - Lifetime Value 1
+  Interactivity for this object is limited for the following reasons:
+    * Actions for composite objects are not supported.
+  These reasons may only be a problem because of these data complexities:
+    * This object uses a data source with a derived column.
+
+Geo region-coordinate - Customer State 1
+  The image "/files/files/db328865-9d87-4150-8fcd-7b3f083a9297" could not be retrieved.

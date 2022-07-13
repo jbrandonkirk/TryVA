@@ -1,0 +1,251 @@
+#ve310 .Container {
+  transparency : 0.6;
+  background-color : #000000;
+  border-color : #545B66;
+  border-width : 1px;
+}
+#ve361 .LegendFill {
+  transparency : 1;
+}
+#ve562 .GraphDataStyleDefault {
+  fill-color : #B14C51;
+}
+#ve341 .ColumnHeader {
+  background-color : #154B77;
+}
+#cd326 .If {
+  color : #15B57B;
+  font-family : AvenirNext;
+}
+#ve562 .GraphDataStyle2 {
+  fill-color : #84414B;
+}
+#ve562 .GraphDataStyle1 {
+  fill-color : #B14C51;
+}
+#ve32 .Container {
+  transparency : 0.5;
+  background-color : #000000;
+  border-color : #545B66;
+  border-width : 1px;
+}
+#ve341 .MeasureHeader {
+  background-color : #1C3B54;
+}
+#ve361 .GraphDataStyleDefault {
+  text-color : #003A85;
+  line-color : #003A85;
+  marker-color : #003A85;
+}
+#ve361 .Container {
+  transparency : 0.6;
+  background-color : #000000;
+  border-color : #545B66;
+  border-width : 1px;
+}
+#ve361 .GraphDataStyle1 {
+  text-color : #003A85;
+  line-color : #003A85;
+  marker-color : #003A85;
+}
+#ve361 .GraphDataStyle2 {
+  text-color : #194F95;
+  line-color : #194F95;
+  marker-color : #194F95;
+}
+#ve606 .GraphDataStyle1 {
+  fill-color : #84414B;
+}
+#ve32 .TwoColorRamp1 {
+  fill-gradient-start-color : #B0B7C2;
+  fill-gradient-end-color : #DD5757;
+}
+#ve32 .TwoColorRamp2 {
+  fill-gradient-start-color : #FFFFFF;
+  fill-gradient-end-color : #DC5B0D;
+}
+#cd337 .If {
+  color : #DD5757;
+  font-family : AvenirNext;
+}
+#ve310 .Table {
+  alt-row-color : #000000;
+  row-color : #000000;
+  border-style : none;
+}
+#cd324 .If {
+  color : #DD5757;
+  font-family : AvenirNext;
+}
+#ve310 .measurebi304 {
+  fill-color : #C7E3F9;
+}
+#ve562 .GraphSkin {
+  data-skin : NONE;
+}
+#cd619 .If {
+  color : #B14C51;
+}
+#ve361 .GraphDataStyle3 {
+  text-color : #3265A5;
+  line-color : #3265A5;
+  marker-color : #3265A5;
+}
+#ve32 .TwoColorRamp {
+  fill-gradient-start-color : #B0B7C2;
+  fill-gradient-end-color : #DD5757;
+}
+#ve341 .Table {
+  alt-row-color : #000000;
+  row-color : #000000;
+  border-style : none;
+}
+#ve361 .GraphDataStyle4 {
+  text-color : #4B7AB5;
+  line-color : #4B7AB5;
+  marker-color : #4B7AB5;
+}
+#ve341 .Container {
+  transparency : 0.6;
+  background-color : #000000;
+  border-color : #545B66;
+  border-width : 1px;
+}
+#ve361 .GraphDataStyle5 {
+  text-color : #6590C4;
+  line-color : #6590C4;
+  marker-color : #6590C4;
+}
+#ve32 .GraphDataStyleDefault {
+  text-color : #7DC3FC;
+  line-color : #7DC3FC;
+  marker-color : #7DC3FC;
+}
+#ve361 .GraphDataStyle6 {
+  text-color : #7EA5D4;
+  line-color : #7EA5D4;
+  marker-color : #7EA5D4;
+}
+#ve361 .GraphDataStyle7 {
+  text-color : #97BBE4;
+  line-color : #97BBE4;
+  marker-color : #97BBE4;
+}
+#ve361 .GraphDataStyle8 {
+  text-color : #B0D0F4;
+  line-color : #B0D0F4;
+  marker-color : #B0D0F4;
+}
+#ve32 .GraphDataStyle3 {
+  fill-color : #DD5757;
+}
+.GraphDataStyle3 {
+  fill-color : #B0D0F4;
+}
+#ve32 .GraphDataStyle2 {
+  text-color : #F9EDC6;
+  line-color : #F9EDC6;
+  marker-color : #F9EDC6;
+}
+#ve32 .GraphDataStyle1 {
+  text-color : #7DC3FC;
+  line-color : #7DC3FC;
+  marker-color : #7DC3FC;
+}
+#ve468 .span2 {
+  font-weight : bold;
+}
+#ve310 .ColumnHeader {
+  background-color : #154B77;
+}
+#ve468 .span3 {
+  font-size : 40pt;
+}
+#ve517 .Container {
+  transparency : 0.6;
+  background-color : #000000;
+  border-color : #545B66;
+  border-width : 1px;
+}
+#ve468 .span1 {
+  font-size : 28pt;
+}
+.GraphDataStyle2 {
+  fill-color : #6590C4;
+}
+#ve468 .span6 {
+  font-weight : bold;
+}
+#ve468 .span7 {
+  font-weight : bold;
+}
+#cd623 .If {
+  color : #DD5757;
+}
+#ve562 .LegendFill {
+  transparency : 1;
+}
+#ve468 .span4 {
+  font-weight : bold;
+}
+#ve468 .span5 {
+  font-weight : bold;
+}
+#ve310 .MeasureHeader {
+  background-color : #1C3B54;
+}
+#ve606 .GraphSkin {
+  data-skin : NONE;
+}
+#cd625 .If {
+  color : #E99596;
+}
+#ve310 .RowHeader {
+  background-color : #154B77;
+}
+#ve562 .Container {
+  transparency : 0.6;
+  background-color : #000000;
+  border-color : #545B66;
+  border-width : 1px;
+}
+#cd617 .If {
+  color : #84414B;
+}
+#ve606 .GraphDataStyleDefault {
+  fill-color : #84414B;
+}
+#ve32 .LegendFill {
+  transparency : 1;
+}
+#ve341 .measurebi329 {
+  fill-color : #C7E3F9;
+  width : 169px;
+}
+#ve341 .hierarchybi331 {
+  width : 151px;
+}
+#cd339 .If {
+  color : #15B57B;
+  font-family : AvenirNext;
+}
+.ReportElementContainer {
+  padding : 5px;
+}
+#ve341 .RowHeader {
+  background-color : #154B77;
+}
+#ve341 .measurebi330 {
+  width : 161px;
+}
+#vi6 .ReportPagePadding {
+  padding : 0px;
+}
+#ve606 .Container {
+  transparency : 0.5;
+  background-color : #011829;
+  border-color : #545B66;
+  border-width : 1px;
+}
+#cd167 .If {
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds7" resourceIdentifier="'cas-shared-default','GPCI','DC_CRIME_INCIDENTS','en_US'" tableModifiedTimeStamp="2022-07-07T18:12:13.133Z">
+            <columns>
+                <column dataType="double" format="BEST12." label="Criminal Complaint Number" xref="CCN"/>
+                <column dataType="string" label="Neighborhood Cluster" xref="NEIGHBORHOOD_CLUSTER"/>
+                <column dataType="double" format="BEST12." label="Census Track" xref="CENSUS_TRACT"/>
+                <column dataType="double" format="BEST12." label="Latitude" xref="LATITUDE"/>
+                <column dataType="double" format="BEST12." label="Longitude" xref="LONGITUDE"/>
+                <column dataType="datetime" format="DATETIME19" label="Crime Start Date" xref="START_DATE"/>
+                <column dataType="datetime" format="DATETIME19" label="Crime End Date" xref="END_DATE"/>
+                <column dataType="string" label="Offense" xref="offense"/>
+                <column dataType="string" label="Offense Group" xref="offensegroup"/>
+                <column dataType="string" label="Type of weapon used to commit crime" xref="METHOD"/>
+                <column dataType="string" label="MPD Shift" xref="SHIFT"/>
+                <column dataType="string" label="Block Name" xref="BLOCK"/>
+                <column dataType="double" format="BEST12." label="Police District" xref="DISTRICT"/>
+                <column dataType="double" format="BEST12." label="Distric Ward Identifier" xref="WARD"/>
+                <column dataType="double" format="BEST12." label="Police Service Areas" xref="PSA"/>
+                <column dataType="string" label="Police Station Name" xref="ps_name"/>
+                <column dataType="string" label="Police Station Address" xref="ps_address"/>
+                <column dataType="string" label="Police Station Contact" xref="ps_contact"/>
+                <column dataType="double" format="BEST12." label="Police Station ZIP" xref="ps_zip"/>
+                <column dataType="string" label="Police Station Type" xref="ps_type"/>
+                <column dataType="double" format="BEST12." label="Police Station Latitude" xref="ps_latitude"/>
+                <column dataType="double" format="BEST12." label="Police Station Longitude" xref="ps_longitude"/>
+            </columns>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>
