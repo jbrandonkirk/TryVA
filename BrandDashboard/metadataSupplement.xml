@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds42" resourceIdentifier="'cas-shared-marketing','Public','SEMRUSH_SAS_COM','en_US'" tableModifiedTimeStamp="2022-07-14T18:47:17.779Z">
+            <columns>
+                <column dataType="string" label="Project ID" xref="Project ID"/>
+                <column dataType="string" label="Landing URL (Lu)" xref="Landing URL (Lu)"/>
+                <column dataType="string" label="Project Name" xref="Project Name"/>
+                <column dataType="date" format="MMDDYY8" label="Date" xref="Date"/>
+                <column dataType="string" label="Keyword (Ph)" xref="Keyword (Ph)"/>
+                <column dataType="double" format="BEST12." label="Cost per Click (Cp)" xref="Cost per Click (Cp)"/>
+                <column dataType="double" format="BEST12." label="# Times Seached (Nq)" xref="# Times Seached (Nq)"/>
+                <column dataType="double" format="BEST12." label="Traffic (Tr)" xref="Traffic (Tr)"/>
+                <column dataType="double" format="BEST12." label="Traffic Cost(Tc)" xref="Traffic Cost(Tc)"/>
+                <column dataType="double" format="BEST12." label="Position Beginning (Be)" xref="Position Beginning (Be)"/>
+                <column dataType="double" format="BEST12." label="Position Ending (Fi)" xref="Position Ending (Fi)"/>
+                <column dataType="string" label="Display Project Name" xref="Display Project Name"/>
+                <column dataType="string" label="Type" xref="Type"/>
+                <column dataType="string" label="Language" xref="Language"/>
+                <column dataType="string" label="Country" xref="Country"/>
+                <column dataType="string" label="SAS Country Name" xref="SAS Country Name"/>
+                <column dataType="string" label="Alpha-2 code" xref="Country Code"/>
+                <column dataType="double" format="BEST12." label="Translated Flag" xref="Translated Flag"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds157" resourceIdentifier="'cas-shared-marketing','Public','MST_CF_SOCIAL','en_US'" tableModifiedTimeStamp="2022-07-14T18:47:07.283Z">
+            <columns>
+                <column dataType="date" format="DATE9" label="Date" xref="Date"/>
+                <column dataType="string" label="Theme_Overall" xref="Theme_Overall"/>
+                <column dataType="string" label="Theme" xref="Theme"/>
+                <column dataType="double" format="COMMA9." label="Mentions" xref="Mentions"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds197" resourceIdentifier="'cas-shared-marketing','Public','MST_CF_BRAND_STUDY','en_US'" tableModifiedTimeStamp="2022-07-14T18:47:07.338Z">
+            <columns>
+                <column dataType="string" label="F1" xref="F1"/>
+                <column dataType="double" format="PERCENT6." label="Unaided Awareness" xref="Unaided Awareness"/>
+                <column dataType="double" format="PERCENT6." label="Innovation Credibility" xref="Innovation Credibility"/>
+                <column dataType="double" format="PERCENT6." label="Consideration" xref="Consideration"/>
+                <column dataType="double" format="PERCENT6." label="Emotional Measures" xref="Emotional Measures"/>
+                <column dataType="double" format="PERCENT6." label="Rational Measures" xref="Rational Measures"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds3015" resourceIdentifier="'cas-shared-marketing','Public','MST_BRAND_GA','en_US'" tableModifiedTimeStamp="2022-07-14T18:47:07.396Z">
+            <columns>
+                <column dataType="date" format="MONYY7" label="MONYYYY" xref="MONYYYY"/>
+                <column dataType="date" format="YEAR4" label="Year" xref="Year"/>
+                <column dataType="date" format="MONTH3" label="Mon" xref="Mon"/>
+                <column dataType="string" label="Event Category" xref="Event Category"/>
+                <column dataType="double" format="COMMA9." label="Unique Events" xref="Unique Events"/>
+                <column dataType="double" format="COMMA9." label="Users" xref="Users"/>
+                <column dataType="double" format="COMMA9." label="New Users" xref="New Users"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds4727" resourceIdentifier="'cas-shared-marketing','Public','MST_CF_ORGANIC','en_US'" tableModifiedTimeStamp="2022-07-14T18:47:07.383Z">
+            <columns>
+                <column dataType="string" label="Country" xref="Country"/>
+                <column dataType="string" label="Keyword" xref="Keyword"/>
+                <column dataType="date" format="MMDDYY8" label="Date" xref="Date"/>
+                <column dataType="double" format="COMMA12." label="# Times Seached (Nq)" xref="Times Searched"/>
+                <column dataType="string" label="Month" xref="Month"/>
+                <column dataType="string" label="Year" xref="Year"/>
+            </columns>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>
